@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="花店,網路花店,台北花店,台中花店,高雄花店" />
+<meta name="description" content="台中花舖花店專業於設計花束10年,服務項目:網路花店,台北花店,台中花店,高雄花店,FLOWERSUN99台中花舖花禮專送店" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="all" />
+<title>:::花沐蘭婚禮佈置:::</title>
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if IE 6]>
+			<link rel="stylesheet" href="css/ie6.css" type="text/css" />
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+	</head>
+	<body>
+		<div class="header">
+			
+		
+			<div>
+				<a href="index.rbt" id="logo"><img src="images/logo.gif" alt="logo"/></a>
+				<div class="navigation">
+					<ul class="first">
+						<li class="first"><a href="shopping_car.rbt">購物車</a></li>
+						<li><a href="#">會員中心</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">登入</a></li>
+					</ul>
+				</div>
+				<form action="" class="search">
+					<input type="text" value="請輸入商品關鍵字" onblur="this.value=!this.value?'search':this.value;" onfocus="this.select()" onclick="this.value='';"/>
+					<input type="submit" id="submit" value=""/>
+				</form>
+			</div>
+			<div id="navigation">
+				<ul rabbit:class="com.kuroshio.web.module.menu.SelectMenuForeach" menu="index.rbt,首頁;product_list.rbt,促銷花禮;about.rbt,關於我們;http://flowersuning.pixnet.net/album/list,部落格;tv.rbt,影片列表;contact_us.rbt,連絡我們;map.rbt,門市資訊">
+					<li rabbit:id="listMenu"><a href="index.rbt" rabbit:id="linkMenu"><span rabbit:id="lblMenu">首頁</span></a></li>
+				</ul>
+			</div>
+		
+	
+		</div>
+		<div class="body">
+			
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.OrderPage" websiteId="homegowhat">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  style="background-color:#060; font-size:24px;" class="accordion radius" >
+  <tr>
+    <td align="center"><a style=" color:#FFF;text-decoration: none">結帳</a></td>
+    </tr>
+</table>
+<form method="post" rabbit:id="formOrder" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td colspan="2" align="center">付款方式說明</td>
+        </tr>
+      <tr>
+        <td align="center">一般轉帳</td>
+        <td colspan="-1" align="center">xxx元</td>
+      </tr>
+      <tr>
+        <td align="center">便利超商</td>
+        <td colspan="-1" align="center">手續費xx元</td>
+      </tr>
+     
+      <tr>
+        <td colspan="2">*即時訂購加入lineID:flowersun99 
+*單筆訂單刷卡 
+*線上刷卡畫面連結網址 
+http://www.flowersun.com.tw/sunpage/paycard/index.php 
+
+
+*連結網址請輸入B053+行動號碼(或是B053訂單號碼) 
+*若選擇ATM轉帳請提供帳號後5碼在交辦事項喔或是電話 確認~以方 便 核對金額.可以不用傳真
+
+  
+*台中花舖 花嫁囍事婚禮佈置痞客邦相簿 
+http://flowersuning.pixnet.net/album/list
+
+  
+
+
+**外國朋友訂購花禮，請留email以方便聨繫 
+**台中花店:台中市當日緊急單專人送達則須酌收運費喔~ 
+*當日送花請來電確認訂單唷!!,請來電詢 04-22950495 
+*歡迎來店參觀選購 
+*門牌整編:台中市西屯區中清路二段207號209號
+
+
+
+**24H網站下單 ~會員價已含運費~ 
+*大陸訂單:配送大陸各大城市。 
+參照本網站花禮價格加500元費用(最低1500元起,特殊花禮及節日 除外)  
+*email:fennylin1595@hotmail.com  
+
+
+*台中花舖 花嫁囍事婚禮佈置痞客邦相簿 
+http://flowersuning.pixnet.net/album/list 
+
+
+*請到各金融機構匯款  
+輸入銀行 : 國泰世華(水湳分行)013 
+輸入戶名: 花舖花坊任晏儀 
+輸入帳號：233035002051 
+匯款後請傳真0422950490匯款單至公司或來電告知  </td>
+      </tr>
+    </table></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <td align="center" nowrap="nowrap">*訂購人姓名</td>
+        <td align="center"><input type="text" name="textfield5" rabbit:id="txtCustomerName" />
+          <input type="hidden" name="hiddenField" rabbit:id="txtCustomerId" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">連絡手機</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtCellphone" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">連絡電話</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtTel" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">寄貨地址</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtAddress" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">電子信箱</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtEmail" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">付款方式</td>
+        <td align="left"><select name="select" rabbit:id="selectPayWay">
+        </select></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">取貨方式</td>
+        <td align="left"><select name="select2" rabbit:id="selectGetWay">
+        </select></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">訂購內容</td>
+        <td align="left"><table width="100%" border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <td>名稱</td>
+            <td>數量</td>
+            <td>單價</td>
+          </tr>
+          <tr rabbit:id="listItems">
+            <td><span rabbit:id="lblName">米</span></td>
+            <td align="right"><span rabbit:id="lblCount">1</span></td>
+            <td align="right"><span rabbit:id="lblMoney">150</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">總計:</td>
+            <td align="right"><span rabbit:id="lblTotalMoney">150</span></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="button6" id="button9" value="確定送出" onclick="window.location.href='product_list.tiles'" />
+          <input type="button" name="button6" id="button10" value="取消訂購" /></td>
+      </tr>
+    </table></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+</form>
+
+<span rabbit:id="lblHtml"></span>
+</div>
+
+			<br />
+			<div class="article">
+				<div class="first">
+					<h3>Please Read</h3>
+					<p>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text.</p>
+					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
+					<p>If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.</p>
+					<p>Before using a template from Free Website Templates, you must read all the for further information <a href="http://www.freewebsitetemplates.com/about/terms">Terms of Use</a></p>
+				</div>
+				<div>
+					<h3>Sed Elementum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum nibh eget justo dapibus eu porttitor purus hendrerit.</p>
+					<a href="http://www.freewebsitetemplates.com">www.freewebsitetemplates.com</a>
+					<a href="http://www.freewebsitetemplates.com/forums/">www.freewebsitetemplates.com/forum</a>
+				</div>
+				<div class="connect">
+					<h2>Follow us</h2>
+					<a href="http://facebook.com/freewebsitetemplates" id="facebook">Facebook</a>
+					<a href="http://twitter.com/fwtemplates" id="twitter">Twitter</a>
+					<a href="#" id="comments">Comments</a>
+					<a href="http://www.flickr.com/freewebsitetemplates/" id="flickr">Flickr</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Copyright &copy; 2015 Kuroshio Digital 版權所有
+</p>
+		</div>
+	</body>
+</html>

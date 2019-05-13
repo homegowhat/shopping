@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div    rabbit:class="com.kuroshio.web.office.signin.page.SigninRecord4PersonalPage">
+<input type="hidden" rabbit:id="txtId" />
+<table rabbit:id="cmpWork" width="300" border="1" cellspacing="0" cellpadding="5" class="tableList">
+  <tr class="titleTr">
+    <td colspan="3" align="center"><a rabbit:id="jbtnBeforeMonth" >上個月</a>&nbsp;&nbsp;
+	<input type="hidden" rabbit:id="txtYearMonth" /><span rabbit:id="lblYear">2012</span>年<span rabbit:id="lblMonth">12</span>月</td>&nbsp;&nbsp;<a rabbit:id="jbtnNextMonth" >下個月</a>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="3" align="center">姓名:<span rabbit:id="lblUsername">2012</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td>日期</td>
+    <td>打卡時間</td>
+  </tr>
+  <tbody>
+  <tr class="listRow" rabbit:id="listTime">
+    <td><span rabbit:id="lblDate">1</span></td>
+    <td><span rabbit:id="lblSignIn">07:59</span></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/tab.css" />
+    <script type="text/javascript" src="js/tab.js"></script>
+</head>
+   <body>
+   <div >
+   <br />
+   <br />
+   <br />
+   <br />
+   		<div rabbit:class="com.kuroshio.web.office.schedule.page.HolidayManager"  align="center">
+   		<table>
+   			<tr>
+   			
+   				<td>
+   				<div>
+   					<a style="cursor: pointer;" rabbit:id="btnNow">
+	   				<input type="image" src="images/today.png"/>
+	   				<span>回到當前月份</span>
+	   				</a>
+   				</div>
+   				</td>
+   				
+		  </tr></table>
+   			<input type="button" name="Submit" value="新增本年度六日的假日" rabbit:id="btnYearHoliday" style="display:none;" />
+   			
+<div class="abgne_tab">
+           
+            
+<div class="tab_container">
+  <div id="tab1">
+  <br />
+   			<div style="text-align:center;">
+		   		<input type="image" rabbit:id="btnPre" src="images/previous.png"/>
+		   		<span rabbit:id="labYear"></span>
+		   		<span rabbit:id="labMon"></span>
+		   		<input type="image" rabbit:id="btnNext" src="images/next.png"/>
+		   		<input type="hidden" rabbit:id="txtSelectYearMonth" />
+	   			<table border="1" align="center" cellpadding="10" rabbit:id="cmpDiv">
+					<tr rabbit:id="listLine">
+						<td rabbit:id="listDateRow" valign="top" align="left">
+						<span rabbit:id="lblTitle"></span>
+							<table width="80" height="80" rabbit:id="cmpDate">
+								<tr><td valign="top" align="left" >
+									<span rabbit:id="lblDay"></span><input type="image" rabbit:id="jbtnHoliday" value="設定假日"/>
+								</td>
+								<td></td>
+								</tr>
+								
+							</table>	
+						</td>
+					
+					</tr>
+		   		</table>
+	   		</div>
+</div></div></div>	   		
+	   		
+	   		
+   			</div>
+   		</div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<website>
+		<websiteId>homegowhat</websiteId>
+		<dir>ns</dir>
+	<domain>106.187.91.114</domain>
+		<domain>www.kuroshio.com.tw</domain>
+		
+				
+		<!-- 
+		<domain>localhost</domain>
+		<domain>10.211.55.4</domain>
+		
+		<domain>127.0.0.1</domain>	
+			
+		<domain>localhost</domain>
+		 -->
+		
+		
+	</website>
+	
+</data>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="花店,網路花店,台北花店,台中花店,高雄花店" />
+<meta name="description" content="台中花舖花店專業於設計花束10年,服務項目:網路花店,台北花店,台中花店,高雄花店,FLOWERSUN99台中花舖花禮專送店" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="all" />
+<!-- css -->
+	<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="css/main.css" />
+    
+<title>:::花沐蘭婚禮佈置:::</title>
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+    <!-- JS.innerfade -->
+    
+  	
+</head>
+<body>
+
+
+    
+	<!--header here-->
+    <div id="header">
+   	  	
+	<script type="text/javascript">
+			$(function(){
+				$("ul.navigation > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+				$("ul.navigation > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+			});
+		</script>
+		<style type="text/css">
+
+
+			/* 初始化 */
+			body, ul, li, a{
+				margin: 0;
+				padding: 0;
+				font-size: 13px;
+				text-decoration: none;
+			}
+			
+			ul.navigation{
+			display: inline-block;
+			}
+			/* 選單 li 之樣式 */
+			ul.navigation li {
+			list-style: none;
+				position: relative;
+				float: left;
+			}
+			/* 選單 li 裡面連結之樣式 */
+			ul.navigation li a{
+				display: block;
+				padding: 12px 20px;
+				background: #888;
+				color: #FFF;
+			}
+			/* 特定在第一層，以左邊灰線分隔 */
+			ul.navigation > li > a{
+				border-bottom: 1px solid #CCC;				
+				border-left: 1px solid #CCC;
+			}
+			ul.navigation > li > a:hover{
+				color: #666;
+				background: #DDD
+			}
+			/* 特定在第一層 > 第二層或以後下拉部分之樣式 */
+			ul.navigation ul{
+			z-index: 10;
+				display: none;
+				float: left;
+				position: absolute;			
+				left: 0;	
+				margin: 0;
+			}
+			/* 當第一層選單被觸發時，指定第二層顯示 */
+			ul.navigation li:hover > ul{
+			z-index: 10;
+				display: block;
+			}			
+			/* 特定在第二層或以後下拉部分 li 之樣式 */
+			ul.navigation ul li {
+			z-index: 10;
+				border-bottom: 1px solid #DDD;
+			}
+			/* 特定在第二層或以後下拉部分 li （最後一項不要底線）之樣式 */
+			ul.navigation ul li:last-child {
+				border-bottom: none;
+			}
+			/* 第二層或以後選單 li 之樣式 */
+			ul.navigation ul a {
+				width: 120px;
+				padding: 10px 12px;	
+				color: #666;		
+				background: #EEE;			
+			}
+			ul.navigation ul a:hover {		
+				background: #CCC;				
+			}
+			/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
+			ul.navigation ul li:hover > ul{
+			
+				display: block;
+				position: absolute;
+				top: 0;				
+				left: 100%;
+			}
+			/* 箭頭向下 */
+			.arrow-bottom {
+				display: inline-block;
+				margin-left: 5px;
+				border-top: 4px solid #FFF;
+				border-right: 4px solid transparent;				
+				border-left: 4px solid transparent;		
+				width: 1px;
+				height: 1px;
+			}
+
+			/* 箭頭向右 */
+			.arrow-right {
+				display: inline-block;
+				margin-left: 12px;	
+				border-top: 3px solid transparent;
+				border-bottom: 3px solid transparent;
+				border-left: 3px solid #666;		
+				width: 1px;
+				height: 1px;
+			}
+		</style>
+		<div classX="logo"  style="text-align:center">
+    		<a href="index.aspx" hidefocus="true"><img src="images/logo1.jpg" alt="花意空間" /></a>      
+   	 
+   	 <div classX="sub" style="text-align:center;height:40px;margin:0 auto;">
+   	  <div  rabbit:class="com.kuroshio.web.module.menu.page.client.SelectMenuForeachFromDB1" websiteId="homegowhat" menu="index.rbt,首頁;product_list.rbt,促銷花禮;about.rbt,關於我們;http://flowersuning.pixnet.net/album/list,部落格;tv.rbt,影片列表;contact_us.rbt,連絡我們;map.rbt,門市資訊">
+			
+   	  </div>
+   	  </div>
+   	  	</div>
+      <div id="band">
+   	  </div>
+   	  
+   	  
+   	  
+	
+    </div>
+    
+
+	<!-- 輪撥圖片 -->
+	<div  rabbit:class="com.kuroshio.web.module.picture.page.client.SlidePicIndexFromDirPicById" websiteId="homegowhat" websiteDir="flower_moon_lan2" type="UPLOAD2DIR" u="slides" >
+	<div id="slideshow">
+		<div id="slide" >			
+			    <li  rabbit:id="listImgItem">
+                		<img  rabbit:id="cmpImg" u="image" src="../img/landscape/01.jpg" />
+                </li>
+            </div>
+		</div>
+	</div>
+	
+    <!--links here-->
+    <div id="linksBG">
+    	
+
+    </div>
+    
+    	    
+    <!--footer here-->
+    <div id="footer">
+    
+				Copyright &copy; 2015 Kuroshio Digital 版權所有
+
+	</div>
+ 	<!--go to top-->
+    <div id="goTop"></div>
+
+
+    <script type="text/javascript">
+	    $(document).ready(
+				function(){
+					
+					$('#slide').innerfade({
+						animationtype: 'fade',
+						speed: 1000,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '430px'
+					});
+					
+					
+				}
+		);
+
+  	</script>
+</body>
+</html>

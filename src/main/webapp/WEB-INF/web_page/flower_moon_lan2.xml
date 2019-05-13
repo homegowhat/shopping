@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<website>
+		<websiteId>homegowhat</websiteId>
+		<domain>localhost</domain>
+		<dir>flower_moon_lan2</dir>
+		<domain>www.mulanflower.com.tw</domain>
+		
+		<!-- 
+		
+		<domain>localhost</domain>
+<domain>0:0:0:0:0:0:0:1</domain>
+<domain>www.kuroshio.com.tw</domain>
+<domain>homegowhat-PC</domain>
+<domain>106.187.91.114</domain>
+<domain>li411-114.members.linode.com</domain>
+ -->
+	</website>
+	
+</data>

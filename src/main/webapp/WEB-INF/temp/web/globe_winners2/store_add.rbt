@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+
+</head>
+	<body ><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+	<div rabbit:class="com.kuroshio.web.tmp.demo.DemoMixFormImpl"  class="table-responsive">
+	<form  method="post" rabbit:id="form">
+	<table  border="1" cellpadding="10" cellspacing="0" class="table table-striped">
+				<tr>
+					<th colspan="2">123123</th>
+				</tr>
+				<tr>
+					<td>
+						文字方塊1
+					</td>
+					<td>
+						<input class="form-control required" type="text" rabbit:id="txt1" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						文字方塊2
+					</td>
+					<td >
+						<textarea  class="form-control required" rows="4" cols="50" rabbit:id="txt2"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						下拉選單
+					</td>
+					<td>
+						<select rabbit:id="slt1" class="form-control" multipleX="multiple"></select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						checkbox
+					</td>
+					<td rabbit:id="chkG1">
+						<div  style="display:inline" rabbit:id="listC1">
+							<label  class="btn btn-warning"  rabbit:id="jBtnC1">
+								<input type="checkbox" rabbit:id="chk1"/>
+									<span rabbit:id="lblC1"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						radio
+					</td>
+					<td rabbit:id="rdoG1">
+						<div  style="display:inline" rabbit:id="listR1">
+							<label  class="btn btn-warning"  rabbit:id="jBtnR1">
+								<input type="radio" rabbit:id="rdo1"/>
+									<span rabbit:id="lblR1"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>
+						checkbox2
+					</td>
+					<td rabbit:id="chkG2">
+						<div  style="display:inline" rabbit:id="listC2">
+							<label  class="btn btn-warning"  rabbit:id="jBtnC2">
+								<input type="checkbox" rabbit:id="chk2"/>
+									<span rabbit:id="lblC2"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						radio
+					</td>
+					<td rabbit:id="rdoG2">
+						<div  style="display:inline" rabbit:id="listR2">
+							<label  class="btn btn-warning"  rabbit:id="jBtnR2">
+								<input type="radio" rabbit:id="rdo2"/>
+									<span rabbit:id="lblR2"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" class="btn btn-default btn-lg btn-block" value="送出" />
+					</td>
+				</tr>
+			</table>
+	</form></div>
+			</body>
+</html>

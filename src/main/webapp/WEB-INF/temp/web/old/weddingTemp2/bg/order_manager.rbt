@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.OrdersManager" websiteId="farm">
+<table width="98%" border="1" align="center" cellpadding="5" cellspacing="0"  class="tableList">
+  <tr class="titleTr">
+    <td colspan="12" align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">訂單管理</span></td>
+  </tr>
+  <tr  class="titleTr">
+    <td colspan="12"  class="titleTd"><input type="hidden"  rabbit:id="txtYmDate"  /><input type="hidden"  rabbit:id="txtEditOrderDate"  /></td>
+  </tr>
+  <tr class="titleTr">
+    <td nowrap="nowrap" class="titleTd">訂單編號</td>
+    <td nowrap="nowrap" class="titleTd">訂購日期</td>
+    <td nowrap="nowrap" class="titleTd">客戶/連絡方式</td>
+    <td nowrap="nowrap" class="titleTd">內容</td>
+    <td nowrap="nowrap" class="titleTd">方式</td>
+    <td nowrap="nowrap" class="titleTd">金額</td>
+    <td nowrap="nowrap" class="titleTd">狀況</td>
+  </tr>
+   <tbody  rabbit:id="cmpOrders">
+  <tr rabbit:id="listOrders" class="listRow">
+    <td nowrap="nowrap"><span rabbit:id="lblNo">1115151</span></td>
+    <td nowrap="nowrap"><span rabbit:id="lblOrderDate">2013-02-05</span></td>
+    <td nowrap="nowrap"><span rabbit:id="lblCustomer">李東原</span><br />
+<span rabbit:id="lblAddress">台中市大平區中山路一段一號
+    </span><br />
+<span rabbit:id="lblTel">電話:04-2533073</span> <br />
+      <span rabbit:id="lblCellphone">手機:0953333543</span></td>
+    <td valign="top" nowrap="nowrap"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr rabbit:id="listOrderItem">
+        <td rabbit:id="lblOrderItemName">香米(150)</td>
+        <td rabbit:id="lblOrderItemCount">數量ｘ5</td>
+      </tr>
+     
+    </table></td>
+    <td nowrap="nowrap"><span rabbit:id="lblPayWay">貨到付款</span></td>
+    <td nowrap="nowrap"><span rabbit:id="lblMoney">1250</span></td>
+    <td nowrap="nowrap"><input type="button" name="button16" id="button11" value="修改" href="add_sales_orders.tiles" rabbit:id="btnShowEdit" /></td>
+  </tr>
+  </tbody>
+  <tr class="titleTr">
+    <td colspan="12"  class="titleTd" align="center"><input type="hidden" name="hiddenField" id="pageCode" rabbit:id="downPageCode" pagesize="10" /></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div rabbit:class="com.kuroshio.web.module.login.page.LogoutPage" ></div>
+</body>
+</html>

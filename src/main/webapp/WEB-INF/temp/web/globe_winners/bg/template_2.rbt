@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+.m{
+background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000), color-stop(.6,#689));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+} 
+</style>
+</head>
+<body ><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container" >
+$top
+</div>
+</nav>
+<table class="table table-bordered">
+<tr><td>
+$body
+</td>
+</tr>
+<tr>
+<td>
+$bottom
+</td>
+</tr>
+</table>
+</body>
+</html>

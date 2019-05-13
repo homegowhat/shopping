@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<htmlDir dir="H:\workspace\MKPL.OrderLunch\ROOT\templat_test" ></htmlDir>
+	<generateDir dir="H:\workspace\MKPL.OrderLunch\ROOT\template_new" ></generateDir>
+	<!-- 模版-->
+	<!-- TMP要有指定目錄，而不是都到htmlDir底下找-->
+	<tmp name="fg" p="template.rbt">
+	<!-- title目前會load page head中的titile填入，所以這邊還要不要，要確認, 照理是不要-->
+		<title >預設title</title>
+		<top p="top.rbt"></top>
+		<center p="預設頁">
+			<!-- 這邊可以加入第幾欄, 這麼什麼名，下面page就要應對什麼名-->
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	<!-- 前台-->
+	<fg dir="">
+		<!-- page中若tag中沒tmp，就單純copy 該頁到資料夾; 若有就要使用模板，p為最後產出名稱-->
+		<!-- 定出特殊規格 ，若page中含有appoint，就是指到到該目錄下找該檔案copy到指定目錄-->
+		<page p="index.rbt" name="首頁">
+			<!-- tmp:template的名字 title:是產出的頁面title內容 top:使用指定top頁面 以下類推 -->
+			<page tmp="fg"  p="StoreManager.rbt" name="商店列表">
+				<page tmp="fg"  p="StorePage.rbt" name="商店內容"></page>
+			</page>
+			<page tmp="fg"  p="UserManager.rbt" name="會員列表" />
+		</page>
+	</fg>
+	<!-- 後台
+	<bg dir="bg">
+		<page>
+
+		</page>
+	</bg>
+	-->
+</data>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body   rabbit:class="com.kuroshio.web.page.psw.AttendenceSetPage" websiteId="homeaddsalt">
+<div style="padding-bottom:5px;"><span style="color:#FFF"><a href="bg.tiles"  style="color:#FFF;text-decoration: none">後台</a>  　&gt;　上班打卡　&gt;　出缺勤條件設定</span></div>
+<form method="post" rabbit:id="form">
+<table width="600" border="1" cellspacing="0" cellpadding="5" class="tableList">
+  <tr class="titleTr">
+    <td colspan="2" align="center" class="titleTd" style="height:50px;"><span class="title_color">出缺勤條件設定</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td >上班時間</td>
+    <td>上午
+      <input type="text" name="textfield3" rabbit:id="txtGoToWorkTime" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td>下班時間</td>
+    <td>下午
+      <input type="text" name="textfield4" rabbit:id="txtGoOffWorkTime" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td>全勤獎金</td>
+    <td><input type="text" name="textfield" rabbit:id="txtNoLateReward" /></td>
+  </tr>
+ 
+  <tr class="titleTr" >
+    <td>全勤條件</td>
+    <td><table width="100%" border="0">
+        <tr>
+          <td>整月份遲到</td>
+          <td><input type="text" name="textfield2" rabbit:id="txtCanLateMinute" /></td>
+          <td>分鐘內算全勤 </td>
+        </tr>
+      </table></td>
+    </tr>
+  <tr class="titleTr">
+    <td colspan="2" align="center"><input type="submit" name="Submit" value="確定" class="" /></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

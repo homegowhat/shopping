@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+</head>
+
+
+
+<body>
+<div  rabbit:class="com.kuroshio.web.module.picture.page.PictureAddWithIdPage" websiteId="homegowhat" type="slide">
+     		<form method="post"></form>
+	<div  width="800" height="500" title="上傳圖片">
+    
+    	<div class="container">
+   			 <span class="btn btn-success fileinput-button">
+       			 <i class="icon-plus icon-white"></i>
+        		<span>選取批次上傳的圖片</span>
+        			<input id="fileupload" type="file" name="files[]" multiple="multiple" />
+    			</span>
+    		<br />
+   			 <br />
+
+   			 <div id="progress" class="progress progress-success progress-striped">
+        		<div class="bar"></div>
+   			 </div>
+
+    		<div id="files"></div>    
+		</div>
+
+		</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>花沐蘭</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+  <link href="http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" type="text/css"/>
+   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type='text/css" /> 
+
+<!---- start-smoth-scrolling---->
+
+
+<!---- start-smoth-scrolling---->
+<style type="text/css">
+.banner{
+	
+	min-height:430px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+</head>
+
+<body>
+	<!----start-body---->
+	$top
+	<!----end-body---->
+	<!----start-body---->
+	$body
+	<!----end-body---->
+	<!----start-footer---->
+	$bottom
+	<!----end-footer---->
+</body>
+</html>

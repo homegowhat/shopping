@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div  rabbit:class="com.kuroshio.web.module.youtube.page.AddYoutubeUrl" websiteId="homegowhat">
+<table border="1" align="center" cellpadding="5" cellspacing="0"  class="tableList">
+  <tr class="titleTr">
+    <td colspan="2" align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">新增youtube影片</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td class="titleTd">youtube網址</td>
+    <td class="titleTd">
+      <input type="text" name="textfield" id="textfield" style="width:350px" rabbit:id="txtUrl" />
+     </td>
+  </tr>
+  <tr class="titleTr">
+    <td class="titleTd">標題</td>
+    <td class="titleTd"><input type="text" name="textfield2" id="textfield2" style="width:350px" rabbit:id="txtTitle" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td class="titleTd">內容</td>
+    <td class="titleTd"><textarea name="textarea" id="textarea" cols="45" rows="5" rabbit:id="txtContent"></textarea></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="2" align="center" class="titleTd"><input type="submit" name="button" id="button" value="新增" rabbit:id="btnAdd" page="youtube_list.rbt" /></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+
+
+
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.CustomerManager" websiteId="yuming">
+<table width="98%" border="1" align="center" cellpadding="5" cellspacing="0" rabbit:id="cmpMember" class="tableList">
+  <tr class="titleTr">
+    <td colspan="9" align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">會員管理</span></td>
+  </tr>
+ 
+  <tr  class="titleTr">
+    <td colspan="9" align="center" >
+    <table width="100%"><tr><td align="left">
+      <input type="text" name="textfield" id="textfield" rabbit:id="txtSearch" />
+      <input type="button" name="button2" id="button2" value="搜尋" rabbit:id="btnSearch" />     
+      </td>
+     <td>
+       <input type="hidden" name="hiddenField" id="pageCode" rabbit:idX="topPageCode" pageSize="10" />
+       </td>
+       <td align="right">&nbsp;</td></tr></table>
+      </td>
+  </tr>
+ 
+ <tr class="titleTr">
+    <td class="titleTd">序號</td>
+
+    <td class="titleTd">名稱</td>
+    <td class="titleTd">手機</td>
+    <td class="titleTd">電話</td>
+    <td class="titleTd">eMail</td>
+    <td class="titleTd">地址</td>
+    <td class="titleTd" style="display:none;">功能</td>
+  </tr>
+  <tr rabbit:id="listMember" class="listRow">
+    <td><span rabbit:id="lblNum">1</span></td>
+    <td><a href="#" rabbit:id="btnMemberShow"><span rabbit:id="lblName">林志伶</span></a></td>
+    <td><span rabbit:id="lblCellphone">0916383838</span></td>
+    <td><span rabbit:id="lblTel">04-5555555</span></td>
+    <td><span rabbit:id="lblEmail">台中市忠孝路２００號</span></td>
+   <td><span rabbit:id="lblAddress">台中市大平區中山路一段一號</span></td>
+    <td  style="display:none;"><input type="button" name="button" id="button" value="修改" rabbit:id="btnShowEdit" /></td>
+  </tr>
+ 
+  <tr class="titleTr">
+    <td colspan="9"  class="titleTd" align="center"><input type="hidden" name="hiddenField" id="pageCode" rabbit:id="downPageCode" pageSize="10" /></td>
+  </tr>
+</table>
+ 
+
+<div rabbit:id="cmpDesc" style="width:800px;  top:50px;text-align:center; " > <div  class="blue_form" >
+<table width="90%" border="1" align="center" cellpadding="5" cellspacing="0" >
+  <tr>
+    <td colspan="2" align="center">詳細資料
+      <input type="hidden" name="hiddenField2" id="hiddenField" rabbit:id="txtSelectMemberId" /></td>
+    </tr>
+  <tr>
+    <td>名稱</td>
+    <td><span rabbit:id="lblNameDesc">王小明</span></td>
+  </tr>
+  <tr>
+    <td>手機</td>
+    <td><span rabbit:id="lblCellphoneDesc">０９２０１１１２２２</span></td>
+  </tr>
+  <tr>
+    <td>電話</td>
+    <td><span rabbit:id="lblTelDesc">０４－２２８５４６８</span></td>
+  </tr>
+  <tr>
+    <td>傳真</td>
+    <td><span rabbit:id="lblFaxDesc">０４－２２８５４６８</span></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><span rabbit:id="lblMailDesc">台中市忠孝路２００號</span></td>
+  </tr>
+  <tr>
+    <td>地址</td>
+    <td><span rabbit:id="lblAddressDesc">台中市忠孝路２００號</span></td>
+  </tr>
+  <tbody rabbit:id="cmpMemberDescList">
+  <tr rabbit:id="listMemberDesc">
+    <td><span rabbit:id="lblMemberDescTitle">額外</span></td>
+    <td><span rabbit:id="lblMemberDescContent">dfdfgdfg</span></td>
+  </tr>
+  </tbody>
+  <tr>
+    <td colspan="2" align="center">　      <input type="button" name="button3" id="button3" value="關閉" rabbit:id="btnCloseMemberDesc" class="groovybutton"  /></td>
+    </tr>
+</table>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

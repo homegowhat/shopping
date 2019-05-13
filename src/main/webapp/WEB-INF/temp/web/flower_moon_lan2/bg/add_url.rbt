@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+ .pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:10px; text-align:center; }
+.pic_no_top ul li img {     width:300px; height:300px; text-align: center; }
+</style>
+
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+</head>
+
+
+
+<body>
+<div  rabbit:class="com.kuroshio.web.module.menu.page.WebMenuEditPanel" websiteId="homegowhat" type="URL">
+    <table border="0">
+      <tr>
+        <td>請輸入目錄名稱</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>目錄名稱:<input type="hidden" rabbit:id="txtFolderId" />
+        <span  rabbit:id="lblFolderName" >123</span></td>
+        <td>連結:
+        <input type="text" rabbit:id="txtUrl" /></td>
+        <td><input type="button" name="button5" id="button5" value="確定" rabbit:id="btnAddCatalog" script="parent.myfunction();alert('修改成功');" /></td>
+      </tr>
+    </table>
+		
+</div>
+</body>
+</html>

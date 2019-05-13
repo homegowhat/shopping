@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<br /><br /><br /><br />
+$breadcrumbs
+<div  rabbit:class="com.kuroshio.web.module.doc.page.NewsManager" websiteId="homegowhat" type="announcement" >
+      <table  border="1" align="center" cellpadding="10" cellspacing="0">
+          <tr >
+            <th colspan="8"  style="background-color:#444444;color:#FFFFFF;text-align:center;height:50px;font-size:24px;font-weight: bold;">公告區</th>
+          </tr>
+          <tr >
+            <th colspan="8" style="text-align:left" ><input type="button" value="新增公告"  rabbit:id="btnShowAdd" /></th>
+          </tr>
+         
+          <tr >
+            <td ><span>序號</span></td>
+            <td >內容</td>
+            <td style="display:none;">跑馬燈</td>
+        
+            <td >日期/時間</td>
+            <td >發佈人</td>
+            <td >功能</td>
+          </tr>
+         <tbody rabbit:id="cmpNews">
+          <tr rabbit:id="newsList"  class="listRow">
+            <td align="center"><span rabbit:id="lblId">1</span></td>
+            <td width="200"><a href="news_content.tiles" rabbit:id="linkNews"><span rabbit:id="lblContent">大家好，目前您看到的文字是測式訊息</span></a></td>
+            <td align="center"  style="display:none;"><span rabbit:id="lblMarquee">無</span></td>
+            <td align="center"><span rabbit:id="lblDate">2012/01/01</span></td>
+            <td align="center"><span rabbit:id="lblUser">123</span></td>
+            <td>
+            <input type="button" rabbit:id="btnEdit" value="修改" />
+            <input type="button" rabbit:id="btnDelete" value="刪除" /></td>
+          </tr>
+          <tr  >
+            <td colspan="6" align="center" ><input type="hidden" name="hiddenField"   rabbit:id="paging" /></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div rabbit:id="cmpAddDiv" width="1024" height="600" >
+    <table border="1" align="center" cellpadding="5" cellspacing="0"  style="width:90%">
+          <thead>
+            <tr>
+              <th colspan="2"  class="title_color"><span rabbit:id="lblEditTitle" >新增編輯</span>最新消息
+<input id="number2" name="number2" type="hidden" rabbit:id="txtActType" /></th>
+            </tr>
+            <tr>
+              <th>主旨</th>
+              <th align="left">
+             		<input type="text" rabbit:id="txtTitle"  size="80" />
+              		<input type="checkbox" name="checkbox" id="checkbox" rabbit:id="chkbxMarquee" style="display:none;" />
+              </th>
+            </tr>
+            <tr>
+              <th>發佈內容
+              <input id="number" name="number" type="hidden" rabbit:id="hiddenNewId" /></th>
+              <th align="left"><textarea name="textfield" cols="50" rows="15" id="textfield" rabbit:id="txtContent"></textarea></th>
+            </tr>
+          </thead>
+  
+          <tr>
+            <td colspan="2" align="center"><input type="button" name="button" id="button" value="發佈" rabbit:id="btnAddNews" class="groovybutton"  />
+              <input type="button" name="button2" id="button2" value="關閉" rabbit:id="btnCancel" class="groovybutton"  /></td>
+          </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>

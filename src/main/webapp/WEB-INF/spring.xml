@@ -1,0 +1,151 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:websocket="http://www.springframework.org/schema/websocket"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/websocket
+        http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+	<!-- -->
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+	 <bean id="configBean" 
+ class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+ 	<property name="location"> 
+           <!--  <value>/WEB-INF/config/api.properties</value> -->
+             <value>/WEB-INF/config/payroll.properties</value> 
+        </property> 
+       
+    </bean> 
+    
+    <!-- 好像spring 4.2後才支援
+    <context:property-placeholder location="WEB-INF/config/*.properties" />
+     
+     -->
+
+	<bean id="dataSource" class="com.kuroshio.base.jdbc.ProxoolDataSourceImpl">
+		<property name="driver">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="driverUrl">
+			<!-- 後面先拿掉 ?useUnicode=true&amp;characterEncoding=utf8 jdbc:mysql://localhost:3306/web_platform?user=kuroshio&amp;password=kuroshio -->
+			<value>jdbc:mysql://localhost:3306/kuroshio?useUnicode=true&amp;characterEncoding=utf8</value>
+		</property>
+		<property name="user">
+			<value>kuroshio</value>
+		</property>
+		<!-- <property name="password" value="41254125" /> -->
+		<property name="password" value="kuroshio" />
+		<property name="alias" value="kuroshio" />
+		<!-- house keeper 保留线程处于睡眠状态的最长时间,house keeper 的职责就是检查各个连接的状态,并判断是否需要销毁或者创建. -->
+		<property name="houseKeepingSleepTime" value="600000" />
+		<!-- 最大的数据库连接数. -->
+		<property name="maximumConnectionCount" value="50" />
+		<!-- 最小的数据库连接数 -->
+		<property name="minimumConnectionCount" value="2" />
+		<!-- 这是我们可一次建立的最大连接数。那就是新增的连接请求,但还没有可供使用的连接。由于连接可以使用多线程,在有限的时间之间建立联系从而带来可用连接，但是我们需要通过一些方式确认一些线程并不是立即响应连接请求的，默认是10 -->
+		<property name="simultaneousBuildThrottle" value="50" />
+		<!-- 一个线程的最大寿命. -->
+		<property name="maximumConnectionLifetime" value="14400000" />
+		<!-- 如果发现了空闲的数据库连接.house keeper 将会用这个语句来测试 -->
+		<property name="houseKeepingTestSql" value="select CURRENT_DATE" />
+
+		<!-- 最小保持的空闲的连接数 -->
+		<property name="prototypeCount" value="2" />
+		<!-- 如果housekeeper 检测到某个线程的活动时间大于这个数值.它将会杀掉这个线程.所以确认一下你的服务器的带宽.然后定一个合适的值.默认是5分钟 -->
+		<property name="maximumActiveTime" value="20000" />
+
+	</bean>
+	
+
+	<bean id="daoManager" class="os.rabbit.dao.DaoManager">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	<!-- 
+	<bean id="cDataSource" class="com.kuroshio.base.jdbc.ProxoolDataSourceImpl">
+		<property name="driver">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="driverUrl">
+			<value>jdbc:mysql://localhost:3306/customized</value>
+		</property>
+		<property name="user">
+			<value>kuroshio</value>
+		</property>
+		<property name="password" value="kuroshio" />
+		<property name="alias" value="kuroshio" />
+		<property name="houseKeepingSleepTime" value="600000" />
+		<property name="maximumConnectionCount" value="50" />
+		<property name="minimumConnectionCount" value="2" />
+		<property name="simultaneousBuildThrottle" value="50" />
+		<property name="maximumConnectionLifetime" value="14400000" />
+		<property name="houseKeepingTestSql" value="select CURRENT_DATE" />
+
+		<property name="prototypeCount" value="2" />
+		<property name="maximumActiveTime" value="20000" />
+
+	</bean>
+	<bean id="cDaoManager" class="os.rabbit.dao.DaoManager">
+		<property name="dataSource">
+			<ref bean="cDataSource" />
+		</property>
+	</bean>
+	
+-->
+	<import
+		resource="classpath*:com/kuroshio/common/base/applicationContext-common.xml" />
+ 
+	<import
+		resource="classpath*:com/kuroshio/web/module/website/applicationContext-website.xml" />
+<import
+		resource="classpath*:com/kuroshio/web/module/base/applicationContext-base.xml" />
+<import
+		resource="classpath*:com/kuroshio/web/module/login/applicationContext-login.xml" />
+
+
+
+<!--  -->
+	
+	
+	<import
+		resource="classpath*:com/kuroshio/web/module/doc/applicationContext-doc.xml" />
+		
+	<import
+		resource="classpath*:com/kuroshio/web/module/picture/applicationContext-picture.xml" />
+	
+	<import
+		resource="classpath*:com/kuroshio/web/module/youtube/applicationContext-youtube.xml" />
+		
+		<import
+		resource="classpath*:com/kuroshio/web/module/xxx/applicationContext-xxx.xml" />
+		
+				
+<import
+		resource="classpath*:com/kuroshio/web/module/member/applicationContext-member.xml" />
+
+	<import
+		resource="classpath*:com/kuroshio/web/tmp/applicationContext-tmp.xml" />
+		
+		<import
+		resource="classpath*:com/kuroshio/web/medicine/patient/applicationContext-patient.xml" />
+
+<import
+		resource="classpath*:com/kuroshio/web/office/staff/service/applicationContext-staff.xml" />
+
+
+<import
+		resource="classpath*:com/kuroshio/web/office/punch/applicationContext-punch.xml" />
+
+	<import
+		resource="classpath*:com/globalwinner/applicationContext-api.xml" />
+		
+	<import
+		resource="classpath*:com/kuroshio/web/office/signin/applicationContext-signin.xml" />	
+		<import
+		resource="classpath*:com/kuroshio/web/office/schedule/applicationContext-schedule.xml" />	
+		<import
+		resource="classpath*:com/kuroshio/web/office/payroll/applicationContext-xxxpayroll.xml" />	
+		
+</beans>

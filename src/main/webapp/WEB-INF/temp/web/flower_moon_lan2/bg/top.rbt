@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+			<li><a href="order_manager.rbt" title="訂單管理">訂單管理</a></li>
+			<li><a href="contact_us_manager.rbt" title="客戶問題">客戶問題</a></li>
+			<li><a href="member_manager.rbt" title="會員管理">會員管理</a></li>
+			<!--
+			<li><a href="menu_manager.rbt" title="目錄管理">目錄管理</a></li>
+			-->
+			<li><a href="menu_manager2.rbt" title="目錄管理">目錄管理</a></li>
+			<li><a href="slide_pic_panel.rbt" title="輪播圖片上傳">首頁輪播圖片上傳</a></li>
+            <li><a href="slide_pic_manager.rbt" title="輪播圖片排序">首頁輪播圖片排序</a></li>
+            <li><a href="catalog_manager2.rbt" title="產品分類管理">產品分類管理</a></li>
+             <li><a href="product_manager.rbt" title="產品管理">產品管理</a></li>
+            <!--  <li><a href="edit_about_us.rbt" title="關於我們">關於我們</a></li>
+               <li><a href="youtube_list.rbt" title="YOUTUBE影片列表">YOUTUBE列表</a></li>
+               <li><a href="youtube_add.rbt" title="YOUTUBE影片新增">YOUTUBE新增</a></li>
+                 <li><a href="doc_manager.rbt" title="文章管理">文章管理</a></li>
+                 -->
+		</ul>
+
+    </div>
+    </div>
+</body>
+</html>

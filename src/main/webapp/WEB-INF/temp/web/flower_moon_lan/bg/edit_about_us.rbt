@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+ .pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:10px; text-align:center; }
+.pic_no_top ul li img {     width:300px; height:300px; text-align: center; }
+</style>
+
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+</head>
+
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+
+<body>
+$breadcrumbs
+<div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<div  rabbit:class="com.kuroshio.web.module.doc.page.NewsEditPage" websiteId="homegowhat" type="ABOUT_US">
+      <form rabbit:id="form"   method="post">
+    <table border="1" align="center" cellpadding="5" cellspacing="0"  style="width:95%" class="tableList">
+          <thead>
+            <tr  class="titleTr">
+              <td  align="center" class="titleTd" style="height:50px;" colspan="2"  ><span style="text-align:center;font-size:24px;font-weight: bold; color:#000"><span rabbit:id="lblEditTitle" style="display:none;" >新增編輯</span>關於我們</span>
+<input  type="hidden" rabbit:id="txtActType" /></td>
+            </tr>
+            <tr class="titleTr"  style="display:none;" >
+              <th class="titleTd">主旨</th>
+              <th class="titleTd" align="left">
+             		<input type="text" rabbit:id="txtTitle"  size="80" />
+              		<input type="checkbox" name="checkbox" id="checkbox" rabbit:id="chkbxMarquee" style="display:none;" />
+              </th>
+            </tr>
+            <tr class="titleTr">
+              <th class="titleTd">發佈內容
+              <input id="number" name="number" type="hidden" rabbit:id="hiddenNewId" /></th>
+              <th class="titleTd" align="left"><textarea name="textfield"  id="textfield" rabbit:id="txtContent"></textarea></th>
+            </tr>
+          </thead>
+  
+          <tr class="titleTr">
+            <td class="titleTd" colspan="2" align="center">
+              <input type="submit" name="button2" id="button2" value="發佈"  class="groovybutton"  />
+              </td>
+          </tr>
+        </table>
+        </form>
+		<div rabbit:id="divPic" width="1024" height="700" title="選擇圖片">
+				<table class="tableList" width="100%" border="1" cellspacing="0" cellpadding="5" rabbit:id="cmpPic" >
+ 					 <tr class="titleTr">
+   						 <td valign="top" class="listRow" align="center">
+   							 <div class="pic_no_top">   
+   								<ul>  
+  									<li rabbit:id="listPic"><a class="example-image-link" target="_blank"  rabbit:id="linkImg"  data-lightbox="example-set" ><img src="..." border="0"   rabbit:id="imgPic"  class="example-image" /></a></li> 
+  								 </ul> 
+ 							 </div>    
+ 						 </td>
+    				</tr>
+				 </table>
+		</div>
+		
+		<div rabbit:id="divUpload" width="800" height="500" title="上傳圖片">
+    
+    <div class="container">
+    <span class="btn btn-success fileinput-button">
+        <i class="icon-plus icon-white"></i>
+        <span>選取批次上傳的圖片</span>
+        <input id="fileupload" type="file" name="files[]" multiple="multiple" />
+    </span>
+    <br />
+    <br />
+
+    <div id="progress" class="progress progress-success progress-striped">
+        <div class="bar"></div>
+    </div>
+
+    <div id="files"></div>    
+</div>
+<script type="text/javascript">
+$(function () {
+    //var url = './../../upload?type=ABOUT_US&newsId='+$("#hiddenNewId").val();
+    var url = './wedding/x.upload?type=ABOUT_US&newsId='+$("#hiddenNewId").val();
+    $('#fileupload').fileupload({
+        autoUpload: true,
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {//
+               // $('<p/>').text(file.name).appendTo('#files');
+                $('<img width="150" height="150" />').attr("src","./wedding/x.Pic?type=NEWS&id="+file.name).appendTo('#files');
+            });
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    });
+});
+</script>
+		</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	
+	<div class="about">
+		<div class="container">
+			<div class="about-top heading">
+				<h3>關於我們</h3>
+			</div>
+			<div class="about-bottom" rabbit:class="com.kuroshio.web.module.doc.page.client.DocContentByType" websiteId="homegowhat" type="ABOUT_US">
+				<img src="images/about-1.jpg" alt="" />
+				<p><span rabbit:id="lblContent"></span></p>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

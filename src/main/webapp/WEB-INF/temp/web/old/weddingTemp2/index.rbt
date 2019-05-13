@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+	
+	<!----start-welcome---->
+	<div class="welcome">
+		<div class="container">
+			<div class="welcome-top">
+				<div class="col-md-3 welcome-left">
+					<img src="images/w-1.png" alt="" />
+				</div>
+				<div class="col-md-3 welcome-left">
+					<img src="images/w-2.png" alt="" />
+				</div>
+				<div class="col-md-3 welcome-left">
+					<img src="images/w-3.png" alt="" />
+				</div>
+				<div class="col-md-3 welcome-left">
+					<img src="images/w-4.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="welcome-bottom">
+				<div class="welcome-bottom-left">
+					<h3>WELCOME</h3>
+				</div>
+				<div class="welcome-bottom-right">
+					<p> Vestibulum placerat euismod viverra. Quisque imperdiet lorem non ante lobortis finibus. Vivamus egestas rhoncus elit, eu mattis mi dictum at. Maecenas mollis viverra dolor sed gravida. Maecenas hendrerit turpis ut facilisis faucibus. Cras felis mi, ullamcorper vitae lorem quis, mattis venenatis est. Nulla enim dolor, egestas vel luctus eu, interdum vel mauris.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!----end-welcome---->
+	<!----start-custom---->
+	<div class="custom">
+		<div class="container">
+			<div class="custom-top">
+				<div class="col-md-4 custom-left">
+					<div class="custom-one">
+						<h3>01  CUSTOM BLOCK</h3>
+						<p>Pellentesque consequat viverra ipsum eget efficitur. Integer lobortis scelerisque urna id eleifend. Nullam sagittis consequat dui ac scelerisque. Proin tempus venenatis euismod. Suspendisse ex elit, fermentum.</p>
+						<div class="c-btn">
+							<a href="#">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 custom-left">
+					<div class="custom-one">
+						<h3>02  CUSTOM BLOCK</h3>
+						<p>Pellentesque consequat viverra ipsum eget efficitur. Integer lobortis scelerisque urna id eleifend. Nullam sagittis consequat dui ac scelerisque. Proin tempus venenatis euismod. Suspendisse ex elit, fermentum.</p>
+						<div class="c-btn">
+							<a href="#">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 custom-left">
+					<div class="custom-one">
+						<h3>03  CUSTOM BLOCK</h3>
+						<p>Pellentesque consequat viverra ipsum eget efficitur. Integer lobortis scelerisque urna id eleifend. Nullam sagittis consequat dui ac scelerisque. Proin tempus venenatis euismod. Suspendisse ex elit, fermentum.</p>
+						<div class="c-btn">
+							<a href="#">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>
+	<!----end-custom---->	
+	<!----start-bridal---->
+	<div class="bridal">
+		<div class="container">
+			<div class="bridal-top">
+				<div class="col-md-6 bridal-top-left">
+					<img src="images/b-3.jpg" alt="" />
+					<div class="b-1">
+						<h3>Donec quam quam</h3>
+					</div>
+				</div>
+				<div class="col-md-6 bridal-top-left">
+					<img src="images/b-2.jpg" alt="" />
+					<div class="b-1">
+						<h3>Donec quam quam</h3>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bridal-bottom">
+				<div class="col-md-4 bridal-bottom-left">
+					<img src="images/b-4.jpg" alt="" />
+					<div class="b-2">
+						<h3>Nullam sagittis</h3>
+					</div>
+				</div>
+				<div class="col-md-4 bridal-bottom-left">
+					<img src="images/b-6.jpg" alt="" />
+						<div class="b-2">
+							<h3>Aliquam nec mi</h3>
+						</div>
+				</div>
+				<div class="col-md-4 bridal-bottom-left">
+					<img src="images/d-7.jpg" alt="" />
+						<div class="b-2">
+							<h3>Duis at arcu in</h3>
+						</div>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!----start-bridal---->
+	<!----start-testimonials---->
+	<div class="testimonials">
+		<div class="container">
+			<div class="testimonials-top">
+				<h3>TESTIMONIALS</h3>
+			</div>
+			<div class="testimonials-bottom">
+				<div class="col-md-4 testimonials-left">
+					<img src="images/test-1.png" alt="" />
+					<h5>JANE ADAMS</h5>
+					<p>Veases dey vileacene anritma uam socis natoqu eagnis dimte dulmuese feugiata lesuer leceaser strices phaledaty fenanec.</p>
+				</div>
+				<div class="col-md-4 testimonials-left">
+					<img src="images/test-3.png" alt="" />
+					<h5>KATE GORDON</h5>
+					<p>Veases dey vileacene anritma uam socis natoqu eagnis dimte dulmuese feugiata lesuer leceaser strices phaledaty fenanec.</p>
+				</div>
+				<div class="col-md-4 testimonials-left">
+					<img src="images/test-2.png" alt="" />
+					<h5>MONICA SMITH</h5>
+					<p>Veases dey vileacene anritma uam socis natoqu eagnis dimte dulmuese feugiata lesuer leceaser strices phaledaty fenanec.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!----end-testimonials---->
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<website>
+		<websiteId>yuming</websiteId>
+		<dir>globe_winners</dir>
+		
+		<!-- 
+		<domain>localhost</domain>
+		<domain>Allen-PC</domain>
+		<domain>www.sscm2015.com</domain>
+		 -->
+	</website>
+	
+</data>

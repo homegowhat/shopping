@@ -1,0 +1,130 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+
+.word{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	 color:#000;
+	text-shadow: white 1px 1px 1px;
+	font-weight: bold;
+}
+
+.pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:5px; text-align:center; }
+.pic_no_top ul li img {     width:192px; height:192px; text-align: center; }
+
+</style>
+</head>
+
+<body>
+<div class="pic_no_top">   
+<ul>  
+   <li> 
+	<a href="member_manager.rbt">
+		<table>
+			<tr>
+      			<td align="center" >
+      				<span class="word">會員管理</span>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<img src="images/pic/48.png"  />
+      			</td>
+      		</tr>
+      	</table>
+      </a>
+	</li> 
+	<li> 
+		<a href="product_manager.rbt">
+			<table>
+				<tr>
+    				<td align="center">
+    					<span class="word">產品管理</span>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<img src="images/pic/20.png"  />
+    				</td>
+    			</tr>
+    		</table>
+    	</a>
+	</li> 
+ 	<li >
+		<a href="order_manager.rbt">
+			<table>
+				<tr>
+    				<td align="center">
+    					<span class="word">訂單管理</span>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<img src="images/pic/45.png"  />
+    				</td>
+    			</tr>
+    		</table>
+    	</a>
+	</li> 
+	<li >
+		<a href="doc_manager.rbt">
+			<table>
+				<tr>
+    				<td align="center">
+    					<span class="word">文章管理</span>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<img src="images/pic/24.png"  />
+    				</td>
+    			</tr>
+    		</table>
+    	</a>
+	</li> 
+	<li >
+		<a href="pic_manager.rbt">
+			<table>
+				<tr>
+    				<td align="center">
+    					<span class="word">幻燈圖片管理</span>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<img src="images/pic/40.png"  />
+    				</td>
+    			</tr>
+    		</table>
+    	</a>
+	</li> 
+	<li >
+		<a href="edit_about_us.rbt">
+			<table>
+				<tr>
+    				<td align="center">
+    					<span class="word">關於我們</span>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<img src="images/pic/38.png"  />
+    				</td>
+    			</tr>
+    		</table>
+    	</a>
+	</li>
+</ul> 
+ </div> 
+
+</body>
+</html>

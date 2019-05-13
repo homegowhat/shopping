@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.ShoppingCar" websiteId="homegowhat">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0"  styleX="background-color:#060; font-size:24px;" class="accordion radius" >
+  <tr>
+    <td align="center"><a style="text-decoration: none"><h1>當前選購商品</h1></a></td>
+    </tr>
+</table>
+<table width="100%" border="1" cellpadding="5" cellspacing="0" style="border: 1px solid black;">
+ 
+  <tr>
+    <td>產品名稱</td>
+    <td>數量</td>
+    <td>小計</td>
+    <td>功能</td>
+  </tr>
+  <tbody rabbit:id="cmpShopping">
+  <tr rabbit:id="listShopping">
+    <td><span rabbit:id="lblProduct">123123</span></td>
+    <td align="right"><span rabbit:id="lblCount">1</span></td>
+    <td align="right"><span rabbit:id="lblMoney">1</span></td>
+    <td><input type="button" name="button4" id="button4" value="加1" rabbit:id="btnAdd" />
+    <input type="button" name="button" id="button" value="減1" rabbit:id="btnCut" />
+    <input type="button" name="button2" id="button2" value="刪除" rabbit:id="btnDel" /></td>
+  </tr>
+ 
+  <tr >
+    <td colspan="4" align="right">總計:<span rabbit:id="lblTotalMoney">1111</span></td>
+    </tr>
+  </tbody>
+  <tr>
+    <td colspan="4" align="center"><input type="button" name="button3" id="button3" value="續看商品" onclick="window.location.href='product_list.rbt'" />
+      <input type="button" name="button5" id="button5" value="我要結帳" rabbit:id="btnPay" goto="order_page.rbt" /></td>
+  </tr>
+ 
+</table>
+</div>
+</body>
+</html>

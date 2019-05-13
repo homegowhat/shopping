@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<htmlDir dir="D:/workspace/kuroshio-web-platform/src/main/webapp/weddingTemp3" ></htmlDir>
+	<generateDir dir="D:/workspace/kuroshio-web-platform/src/main/webapp/wedding1" ></generateDir>
+	<!-- 模版-->
+	<!-- TMP要有指定目錄，而不是都到htmlDir底下找-->
+	<tmp name="fg"  p="template.rbt">
+	<!--  title目前會load page head中的titile填入，所以這邊還要不要，要確認, 照理是不要 -->
+		<title >預設title</title>
+		<top p="top.rbt"></top>
+		<center p="預設頁">
+			<!--  這邊可以加入第幾欄, 這麼什麼名，下面page就要應對什麼名 -->
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	
+	
+	
+	<!-- 前台-->
+	<fg >
+		<!--  page中若tag中沒tmp，就單純copy 該頁到資料夾; 若有就要使用模板，p為最後產出名稱 -->
+		<!--  定出特殊規格 ，若page中含有appoint，就是指到到該目錄下找該檔案copy到指定目錄> -->
+		<!--<page p="index.rbt" name="首頁">-->
+			<!-- tmp:template的名字 title:是產出的頁面title內容 top:使用指定top頁面 以下類推 -->
+			<page tmp="fg"  p="index.rbt"  name="首頁">
+				<!-- <page tmp="fg"  p="login.rbt" name="登入頁"></page> -->
+				<page tmp="fg"  p="product_list.rbt" name="產品列表" >
+					<page tmp="fg"  p="product.rbt" name="產品內容">
+						<page tmp="fg"  p="shopping_cart.rbt" name="購物車">
+							<!-- <page tmp="fg"  p="pay.rbt" name="結帳頁"></page> -->
+						</page>
+					</page>
+				</page>
+				<!-- 
+				<page tmp="fg"  p="customber.rbt" name="會員中心" >
+					<page tmp="fg"  p="shopping_cart.rbt" out="shopping_cart1.rbt" name="購物車">
+						<page tmp="fg"  p="pay.rbt" out="pay1.rbt" name="結帳頁"></page>
+					</page>
+					<page tmp="fg"  p="order_list.rbt" name="訂單列表" >
+						<page tmp="fg"  p="product_content.rbt" name="訂單修改"></page>
+					</page>
+				</page>
+				 -->
+				<page tmp="fg"  p="about.rbt" name="關於我們"></page>
+				<page tmp="fg"  p="tv.rbt" name="影片列表">
+					<page tmp="fg"  p="youtube.rbt" name="影片播放"></page>
+				</page>
+			</page>
+			
+		<!-- </page>-->
+	</fg>
+	
+	
+	<tmp name="bg" dir="bg" p="template.rbt">
+		<title >預設title</title>
+		<top p="top.rbt"></top>
+		<center p="預設頁">
+			<!-- 這邊可以加入第幾欄, 這麼什麼名，下面page就要應對什麼名-->
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	<!-- 後台-->
+	<bg dir="bg">
+		<page p="login.rbt" name="登入頁"></page>
+		
+			<page tmp="bg"  p="user_manager.rbt" name="會員管理" ></page>
+			
+			<page tmp="bg"  p="slide_pic_panel.rbt" name="輪播圖片管理" ></page>
+			<page tmp="bg"  p="slide_pic_manager.rbt" name="輪播圖片排序" ></page>
+			<page tmp="bg"  p="catalog_manager2.rbt" name="產品分類管理" ></page>
+			<page  p="add_catalog.rbt" name="新增產品分類" ></page>
+			<page tmp="bg"  p="product_manager.rbt" name="產品管理系統" ></page>
+			<page tmp="bg"  p="order_manager.rbt" name="訂單管理系統" ></page>
+			<page tmp="bg"  p="doc_manager.rbt" name="文章管理" ></page>
+			<page tmp="bg"  p="doc_add.rbt" name="文章新增" ></page>
+			<page tmp="bg"  p="member_manager.rbt" name="會員管理" ></page>
+			<page tmp="bg"  p="edit_about_us.rbt" name="編輯關於我們" ></page>
+			<page tmp="bg"  p="youtube_list.rbt" name="youtube影片管理" ></page>
+			<page tmp="bg"  p="youtube_add.rbt" name="youtube影片新增" ></page>
+             <page tmp="bg"  p="youtube_content.rbt" name="youtube影片播放" ></page>
+		
+	</bg>
+	
+</data>

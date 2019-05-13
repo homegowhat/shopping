@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<body>
+	<div  rabbit:class="com.kuroshio.web.module.user.page.UserManager" websiteId="homegowhat">
+	$breadcrumbs
+	<table rabbit:id="cmpTable" border="1" cellpadding="10" cellspacing="0" >
+				<tr>
+					<th rabbit:id="listTitle" t_c="序號,帳號,email,狀態"><span rabbit:id="lblTitle">發表時間</span></th>
+				</tr>
+				<tr rabbit:id="listRow" t_n="article" c_n="create_date,title,">
+					<td rabbit:id="listCell"><span rabbit:id="lblContent" ></span><img rabbit:id="imgContent" /><a href="#" rabbit:id="btnDetail" >go2detail</a><a href="#" rabbit:id="linkDetail" ><span rabbit:id="lblLinkWord" ></span><img rabbit:id="imgLinkImage" /></a></td>
+				</tr>
+				<tr>
+					<td rabbit:id="cmpPagination" colspan="5" align="center">
+						<input type="hidden" rabbit:id="pgPageCode" />
+					</td>
+				</tr>
+			</table>
+			</div>
+			</body>
+</html>

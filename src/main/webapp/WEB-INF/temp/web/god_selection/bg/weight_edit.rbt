@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+
+</head>
+	<body>
+	<div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+	<br />
+	<div rabbit:class="com.kuroshio.web.medicine.patient.page.WeightEdit"  websiteId="homeaddsalt" class="table-responsive">
+	<form  method="post" rabbit:id="form">
+	<table  border="1" cellpadding="10" cellspacing="0" class=" tableList">
+	<tr class="titleTr">
+    <td colspan="9" align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">病人資料維護</span></td>
+  </tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						日期
+					</td>
+					<td  class="titleTd">
+					<input class="form-control required" type="text" rabbit:id="birthday" />
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						姓名
+					</td>
+					<td  class="titleTd">
+					<input  type="hidden" rabbit:id="txt9" />
+					
+					<span rabbit:id="lblName" ></span>
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						身高
+					</td>
+					<td class="titleTd">
+						<input class="form-control required" type="text" rabbit:id="txt1" />
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						體脂
+					</td>
+					<td class="titleTd">
+						<input  type="text" rabbit:id="txt2" />
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						腰圍
+					</td>
+					<td class="titleTd">
+						<input type="text" rabbit:id="txt3" />
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd">
+						體重
+					</td>
+					<td class="titleTd">
+						<input class="form-control required" type="text" rabbit:id="txt4" />
+					</td>
+				</tr>
+
+			
+				<tr class="titleTr">
+					<td colspan="2" class="titleTd">
+						<input type="submit" class="btn btn-default btn-lg btn-block" value="送出" />
+					</td>
+				</tr>
+			</table>
+	</form>
+	</div>
+	
+			</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/screen.css" media="screen"/>
+
+</head>
+<script src="js/lightbox-2.6.min.js"></script>
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.ProductContent" websiteId="homegowhat">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0"  style="background-color:#060; font-size:24px;" class="accordion radius" >
+  <tr>
+    <td align="center"><a style=" color:#FFF;text-decoration: none">產品說明</a></td>
+    </tr>
+</table>
+<table  border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a class="example-image-link" href="#"  rabbit:id="linkImg"  data-lightbox="example-set" title="試一下title囉~~"><img  class="example-image"  src="https://stamp.post.gov.tw/post/stamp_mall/product_pic/otus.JPG" alt="點擊看原圖"  width="400" rabbit:id="imgProduct" /></a></td>
+    <td valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>名稱</td>
+        <td><span rabbit:id="lblName">123</span></td>
+      </tr>
+      <tr>
+        <td>分類</td>
+        <td><span rabbit:id="lblCatalog">123</span></td>
+      </tr>
+      <tr>
+        <td>訂價</td>
+        <td><span rabbit:id="lblMoney">123</span></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" name="button" id="button" value="加到購物車" rabbit:id="btnOrderProduct" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2">產品介紹</td>
+  </tr>
+  <tr>
+    <td colspan="2"><span rabbit:id="lblContent">1111111111111</span></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

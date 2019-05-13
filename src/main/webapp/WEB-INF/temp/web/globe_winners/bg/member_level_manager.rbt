@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+	<body>
+	<div  rabbit:class="com.kuroshio.web.module.member.page.MemberLevelManager" >
+<table rabbit:id="cmpTable" border="1" cellpadding="10" cellspacing="0"  alignX="center">
+				<tr>
+					<th rabbit:id="listTitle" ><span rabbit:id="lblTitle"></span></th>
+				</tr>
+				<tr rabbit:id="listRow" t_n="article" c_n="create_date,title,">
+					<td rabbit:id="listCell">
+						<span rabbit:id="lbl0" ></span>
+						<img rabbit:id="img0" />
+						<button type="button"  class="btn btn-default" rabbit:id="btn1">
+							<span rabbit:id="lblIcon1" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB1"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn2">
+							<span rabbit:id="lblIcon2" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB2"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn3">
+							<span rabbit:id="lblIcon3" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB3"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn4">
+							<span rabbit:id="lblIcon4" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB4"></span>
+						</button>
+						<a href="#" rabbit:id="link1" >
+							<span rabbit:id="lblL1" ></span>
+							<img rabbit:id="img1" />
+						</a>
+						<a href="#" rabbit:id="link2" >
+							<span rabbit:id="lblL2" ></span>
+							<img rabbit:id="img2" />
+						</a>
+						<a href="#" rabbit:id="link3" >
+							<span rabbit:id="lblL3" ></span>
+							<img rabbit:id="img3" />
+						</a>
+						<a href="#" rabbit:id="link4" >
+							<span rabbit:id="lblL4" ></span>
+							<img rabbit:id="img4" />
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td rabbit:id="cmpPagination" colspan="5" align="center">
+						<input type="hidden" rabbit:id="pgPageCode" />
+					</td>
+				</tr>
+			</table>
+			
+			</div>
+			</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<table border="0" cellspacing="0" cellpadding="10"  rabbit:class="com.kuroshio.web.module.youtube.page.client.YoutubeUrlList" websiteId="homegowhat">
+ <tbody  rabbit:id="cmpUrl">
+<tr rabbit:id="listUrl">
+        <td style="padding:5px"><a  href="youtube.rbt" rabbit:id="linkUrl">
+          <table width="100%" border="0" cellspacing="0" cellpadding="3">
+            <tr>
+              <td><img src="http://i.ytimg.com/vi/gS8o9PKvmv0/1.jpg" alt="" width="320" height="180"  rabbit:id="imgUrl" /></td>
+              <td style="padding:10px"><h3><strong><span rabbit:id="lblTitle">20130617 TVBS 一步一腳印 發現新台灣 農夫魔術師 蔡弘俊 小鴨助耕無毒米</span></strong></h3>
+                <div> </div>
+              <div dir="ltr"><span rabbit:id="lblContent">qweqweqweqwe</span></div></td>
+            </tr>
+          </table>
+        </a></td>
+  </tr>
+  
+  <tr>
+    <td align="center"><input type="hidden" name="hiddenField"  rabbit:id="downPageCode" pagesize="10" /></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

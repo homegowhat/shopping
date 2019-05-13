@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.ProductCatalogAddPanel">
+<span rabbit:id="lblActType"></span>
+<form rabbit:id="form"  method="post" enctype="multipart/form-data" >
+<input type="hidden" rabbit:id="txtScript" />
+        <table border="0">
+          <tr>
+            <td>請輸入要修改的分類名稱</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input type="hidden" rabbit:id="txtCatalogId" />
+              <input type="text" rabbit:id="txtName" /></td>
+          </tr>
+          <tr>
+          	<td>
+          	圖片上傳<input type="file" name="fileField"  rabbit:id="uploadFile" />
+          	</td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="button" id="button" value="確定" rabbit:idX="btnEditCatalog" />
+              <input type="button" rabbit:id="btnCloseEditFolder" value="取消" /></td>
+          </tr>
+        </table>
+        </form>
+        </div>
+</body>
+</html>

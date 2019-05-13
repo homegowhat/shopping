@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+$breadcrumbs
+<div  rabbit:class="com.kuroshio.web.module.doc.page.NewsListPage"  websiteId="homegowhat" type="DOC" >
+      <table width="95%" class="tableList" border="1" align="center" cellpadding="10" cellspacing="0">
+          <tr class="titleTr">
+            <td class="titleTd" colspan="8" align="center"  style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">文章管理</span></td>
+          </tr>
+          <tr  class="titleTr">
+            <th class="titleTd" colspan="8" style="text-align:left" ><a href="doc_add.rbt"><button type="button"  class="btn btn-Primary">
+     						<span class="glyphicon glyphicon-plus"></span>新增文章
+						 </button></a></th>
+          </tr>
+         
+          <tr  class="titleTr">
+            <td  class="titleTd"><span>序號</span></td>
+            <td class="titleTd" >內容</td>
+            <td class="titleTd" style="display:none;">跑馬燈</td>
+        
+            <td class="titleTd" >日期/時間</td>
+            <td class="titleTd" >發佈人</td>
+            <td class="titleTd"  style="display:none;">功能</td>
+          </tr>
+         <tbody rabbit:id="cmpNews">
+          <tr rabbit:id="newsList" class="listRow">
+            <td align="center"><span rabbit:id="lblId">1</span></td>
+            <td><a href="news_content.rbt" rabbit:id="linkNews"><span rabbit:id="lblContent">大家好，目前您看到的文字是測式訊息</span></a></td>
+            <td align="center"  style="display:none;"><span rabbit:id="lblMarquee">無</span></td>
+            <td align="center"><span rabbit:id="lblDate">2012/01/01</span></td>
+            <td align="center"><span rabbit:id="lblUser">123</span></td>
+            <td style="display:none;">
+            <button type="button" rabbit:id="btnEdit" class="btn btn-warning">
+    		 <span class="glyphicon glyphicon-edit"></span>修改
+ 			</button>
+            <button type="button" rabbit:id="btnDelete" class="btn btn-Danger">
+    		 <span class="glyphicon glyphicon-minus-sign"></span>刪除
+ 			</button>
+ 		    </td>
+          </tr>
+          <tr   class="titleTr">
+            <td  class="titleTd" colspan="6" align="center" ><input type="hidden" name="hiddenField"   rabbit:id="paging" /></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+</body>
+</html>

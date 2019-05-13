@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+	<body>
+	<br/><br/><br/><br/>
+	<div  rabbit:class="com.shopping.web.bg.page.ManufacturerAdd"  align="center">
+		<form method="post" rabbit:id="storeForm" url="manufacturer_manager.rbt" >
+		    <table border="1" cellpadding="10" cellspacing="0">
+		        <tr  BGCOLOR="olive" >
+          			<th colspan="2" align="center" bgcolor="#CCCCCC">店家基本資訊</th>
+        		</tr>
+		        <tr>
+		            <td>
+		            	廠商名稱：		            </td>
+		            <td>
+		            	<input rabbit:id="txtName" type="text" />		            </td>
+		        </tr>
+		        <tr>
+		            <td>
+		            	連結：		            </td>
+		            <td>
+		            	<input rabbit:id="txtLink" type="text" />		            </td>
+		        </tr>
+		        <tr>
+		          <td colspan="2" align="center"><input type="submit" value="新增\修改廠商" /><input type="hidden" rabbit:id="txtEditId" /></td>
+	          </tr>
+		        </table>
+		
+    		
+	</form>
+	</div>
+	</body>
+</html>

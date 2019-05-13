@@ -1,0 +1,223 @@
+html,body{ 
+  	background-color: #fff;
+	padding: 0px;
+	margin:0;
+	border:0;
+	font-size:12px;
+	color:#666;
+	font-family: 微軟正黑體,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei',新細明體;
+	list-style:none;
+}
+img
+{
+	border: 0;
+}
+#goTop
+{
+	background-image: url(../images/gotop.png);
+	bottom: 0;
+	cursor: pointer;
+	filter: alpha(opacity=0);
+	height: 25px;
+	moz-opacity: 0;
+	opacity: 0;
+	position: fixed;
+	right: 10px;
+	width: 50px;
+	z-index: 10;
+}
+#header
+{
+	background-color: #FFF;
+	background-image: url(../images/band.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+#header .logo
+{
+	margin: 10px auto 0;
+	text-align: center;
+	width: 1200px;
+}
+#header .sub
+{
+	margin: 0 auto;
+	text-align: center;
+	width: 1200px;
+}
+#header .sub a
+{
+	background-position: center 0;
+	display: inline-block;
+	height: 50px;
+	text-align: center;
+	width: 390px;
+}
+#header .sub a:hover
+{
+	background-position: center -50px;
+}
+#header .sub a.sub1
+{
+	background-image: url(../images/sub1.jpg);
+	background-repeat: no-repeat;
+}
+#header .sub a.sub2
+{
+	background-image: url(../images/sub2.jpg);
+	background-repeat: no-repeat;
+}
+#header .sub a.sub3
+{
+	background-image: url(../images/sub3.jpg);
+	background-repeat: no-repeat;
+}
+#band
+{
+	background-image: url(../images/band.jpg);
+	background-position: center;
+	height: 8px;
+	margin: 0 auto;
+	width: 1200px;
+}
+#slideshow
+{
+	height: 430px;
+	margin: 0 auto 10px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#slideshow #pageImage
+{
+	_top: 10;
+	border-bottom: 15px solid #fff;
+	filter: alpha(opacity=0);
+	left: 50%;
+	list-style: none;
+	margin-left: -1024px;
+	moz-opacity: 0;
+	opacity: 0;
+	position: absolute;
+	top: 10;
+	z-index: 20;
+}
+#slideshow #slide
+{
+	
+	_top: 10;
+	border-bottom: 15px solid #fff;
+	Xleft: 22%;
+	list-style: none;
+	Xmargin-left: -1024px;
+	position: absolute;
+	top: 10;
+	z-index: 0;
+}
+hr
+{
+	border: .5px dashed #A32C34;
+	width: 100%;
+}
+#links
+{
+	background-image: url(../images/band.jpg);
+	background-position: center;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 1200px;
+}
+#links div
+{
+	display: inline-block;
+	margin: 5px 0;
+	text-align: center;
+	width: 390px;
+}
+#links div.category a,#links div.category a:visited
+{
+	color: #5F5554;
+	display: inline-block;
+	font-size: 14px;
+	margin: 5px 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+#links div.category a:hover
+{
+	background-color: #A32C34;
+	color: #fff;
+}
+#links div.quicklink a,#links div.quicklink a:visited
+{
+	color: #5F5554;
+	display: inline-block;
+	font-size: 14px;
+	margin: 5px 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+#links div.quicklink a:hover
+{
+	background-color: #A32C34;
+	color: #fff;
+}
+#links div.news
+{
+	margin: 5px 45px;
+	text-align: left;
+	width: 310px;
+}
+#links div.news a,#links div.news a:visited
+{
+	color: #5F5554;
+	display: inline-block;
+	font-size: 14px;
+	margin: 5px 0;
+	padding: 5px;
+	text-decoration: none;
+}
+#links div.news a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+#links div.news a span,#links div.news a:visited span,#links div.news a:hover span
+{
+	background-color: #A32C34;
+	color: #fff;
+	display: inline-block;
+	font-size: 8px;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+#linksBG
+{
+	background-image: url(../images/band.jpg);
+	background-position: center;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+#footer
+{
+	line-height: 20px;
+	margin: 40px auto 20px;
+	text-align: center;
+	width: 1200px;
+}
+#footer a,#footer a:visited
+{
+	color: #666;
+	text-decoration: none;
+}
+#footer a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}

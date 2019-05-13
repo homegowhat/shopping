@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<website>
+		<websiteId>yuming</websiteId>
+		<dir>globe_winners2</dir>
+		
+		
+		<domain>gw.kuroshio.com.tw</domain>
+		<!-- 
+		<domain>localhost</domain>
+		<domain>127.0.0.1</domain>
+		<domain>Allen-PC</domain>
+		<domain>www.sscm2015.com</domain>
+		 -->
+	</website>
+	
+</data>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.OrderPage" websiteId="homegowhat">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="accordion radius" >
+  <tr>
+    <td align="center"><a style="text-decoration: none"><h1>結帳</h1></a></td>
+    </tr>
+</table>
+
+<form method="post" rabbit:id="formOrder" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><table border="1" cellspacing="0" cellpadding="5">
+      <!--
+      <tr>
+        <td colspan="2" align="center">付款方式說明</td>
+        </tr>
+      <tr>
+        <td align="center">一般轉帳</td>
+        <td colspan="-1" align="center">xxx元</td>
+      </tr>
+      <tr>
+        <td align="center">便利超商</td>
+        <td colspan="-1" align="center">手續費xx元</td>
+      </tr>
+     -->
+      <tr>
+        <td colspan="2">*即時訂購加入lineID:flowersun99 <br />
+*連結網址請輸入B053+行動號碼(或是B053訂單號碼)  <br />
+*若選擇ATM轉帳請提供帳號後5碼在交辦事項喔或是電話 確認~以方 便 核對金額.可以不用傳真 <br />
+
+  
+*台中花舖 花嫁囍事婚禮佈置痞客邦相簿  <br />
+<a href="http://flowersuning.pixnet.net/album/list"  target="_blank">http://flowersuning.pixnet.net/album/list</a> <br />
+
+  
+
+
+**外國朋友訂購花禮，請留email以方便聨繫  <br />
+**台中花店:台中市當日緊急單專人送達則須酌收運費喔~  <br />
+*當日送花請來電確認訂單唷!!,請來電詢 04-22950495  <br />
+*歡迎來店參觀選購  <br />
+*門牌整編:台中市西屯區中清路二段207號209號 <br />
+
+
+
+**24H網站下單 ~會員價已含運費~  <br />
+*大陸訂單:配送大陸各大城市。  <br />
+參照本網站花禮價格加500元費用(最低1500元起,特殊花禮及節日 除外)   <br />
+*email:fennylin1595@hotmail.com   <br />
+
+
+*台中花舖 花嫁囍事婚禮佈置痞客邦相簿  <br />
+<a href="http://flowersuning.pixnet.net/album/list" target="_blank">http://flowersuning.pixnet.net/album/list</a>  <br />
+
+
+*請到各金融機構匯款   <br />
+輸入銀行 : 國泰世華(水湳分行)013  <br />
+輸入戶名: 花舖花坊任晏儀  <br />
+輸入帳號：233035002051  <br />
+匯款後請傳真0422950490匯款單至公司或來電告知  </td>
+      </tr>
+    </table></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><table width="90%" border="1" cellpadding="5" cellspacing="0">
+   <tr rabbit:id="cmpLogin">
+   		<td colspan="2">
+   			<input type="button" rabbit:id="jbtnPopLogin" value="登入"  />*登入可直接匯入舊資料
+   		</td>
+   </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">*訂購人姓名</td>
+        <td align="center"><input type="text" name="textfield5" rabbit:id="txtCustomerName" />
+          <input type="hidden" name="hiddenField" rabbit:id="txtCustomerId" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">連絡手機</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtCellphone" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">連絡電話</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtTel" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">寄貨地址</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtAddress" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">電子信箱</td>
+        <td align="center"><input type="text" name="textfield" rabbit:id="txtEmail" /></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">付款方式</td>
+        <td align="left"><select name="select" rabbit:id="selectPayWay">
+        </select></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">取貨方式</td>
+        <td align="left"><select name="select2" rabbit:id="selectGetWay">
+        </select></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">卡片內容</td>
+        <td align="left"><textarea  rabbit:id="txtCard" rows="10" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td align="center" nowrap="nowrap">訂購內容</td>
+        <td align="left"><table width="100%" border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <td>名稱</td>
+            <td>數量</td>
+            <td>單價</td>
+          </tr>
+          <tr rabbit:id="listItems">
+            <td><span rabbit:id="lblName">米</span></td>
+            <td align="right"><span rabbit:id="lblCount">1</span></td>
+            <td align="right"><span rabbit:id="lblMoney">150</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">總計:</td>
+            <td align="right"><span rabbit:id="lblTotalMoney">150</span></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="button6" id="button9" value="確定送出" onclick="window.location.href='product_list.tiles'" />
+          <input type="button" name="button6" id="button10" value="取消訂購" /></td>
+      </tr>
+    </table></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+</form>
+
+<span rabbit:id="lblHtml"></span>
+</div>
+</body>
+</html>

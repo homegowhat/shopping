@@ -1,0 +1,55 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+</head>
+
+<body>
+
+<div rabbit:class="com.kuroshio.web.module.xxx.page.ProductCatalogManager2" websiteId="homegowhat">
+<table width="98%"  border="1" cellspacing="0" cellpadding="3" class="tableList" >
+  <tr class="titleTr">
+    <td  align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">產品分類管理</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td  align="center" class="titleTd" style="height:50px;"><table  rabbit:id="cmpCatalogTree" >
+      <tr>
+        <td>請選擇要建立在哪個的分類底下          </td>
+      </tr>
+      <tr>
+        <td>當前選擇的產品分類 : <span rabbit:id="lblSelectCatalog">xxxxxx</span><input type="button" rabbit:id="btnShowAddFolder" value="新增分類"  data-toggle="modal" data-target="#cmpAddFolder" /></td>
+      </tr>
+      <tr>
+        <td><div rabbit:id="treeCatalog" style="white-space:nowrap"> <img src="images/open_16.png" /><img rabbit:id="imgCatalog" width="35" height="35" src="images/open_16.png" /> <a rabbit:id="linkSelectCatalog"> <span rabbit:id="lblTreeCatalogName">樹狀目錄
+         
+        </span> </a>
+            <input name="button2" type="button" value="修改" rabbit:id="btnShowEditFolder" />
+            <input name="button22" type="button" value="刪除" rabbit:id="btnShowDelFolder" />
+            <input type="button" value="發佈到首頁" rabbit:id="btn2Index" />
+</div></td>
+      </tr>
+    </table></td>
+  </tr>
+ 
+</table>
+<div class="modal fade" rabbit:id="cmpAddFolder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content blue_form">
+      <div class="modal-body">
+<iframe rabbit:id="frame" name="nam" width="600" height="600" src="add_catalog.rbt"  scrolling="auto"  frameborder="0"></iframe>
+</div></div></div></div>
+
+
+</div>
+<script language="javascript">
+
+
+function myfunction(){
+$('#cmpAddFolder').modal('hide');
+}
+</script>
+</body>
+</html>

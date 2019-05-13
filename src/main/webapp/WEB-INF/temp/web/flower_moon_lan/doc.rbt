@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div rabbit:class="com.kuroshio.web.module.doc.page.client.DocContentById" websiteId="homegowhat" type="ABOUT_US">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="accordion radius" >
+  <tr>
+    <td align="center"><a  styleX=";text-decoration: none"><h1><span rabbit:id="lblDocTitle">關於我們</span></h1></a></td>
+    </tr>
+</table>
+	<div  class="featured">
+	<div class="about">
+		<div class="container">
+			
+			<div class="about-bottom" >
+				<img src="images/about-1.jpg" alt="" />
+				<p><span rabbit:id="lblContent"></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="花店,網路花店,台北花店,台中花店,高雄花店" />
+<meta name="description" content="台中花舖花店專業於設計花束10年,服務項目:網路花店,台北花店,台中花店,高雄花店,FLOWERSUN99台中花舖花禮專送店" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="all" />
+<title>:::花沐蘭婚禮佈置:::</title>
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if IE 6]>
+			<link rel="stylesheet" href="css/ie6.css" type="text/css" />
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+		
+
+	</head>
+	<body>
+		<div class="header">
+			
+		
+			<div>
+				<a href="index.rbt" id="logo"><img src="images/logo.gif" alt="logo"/></a>
+				<div class="navigation">
+					<ul class="first">
+						<li class="first"><a href="shopping_car.rbt">購物車</a></li>
+						<li><a href="#">會員中心</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">登入</a></li>
+					</ul>
+				</div>
+				<form action="" class="search">
+					<input type="text" value="請輸入商品關鍵字" onblur="this.value=!this.value?'search':this.value;" onfocus="this.select()" onclick="this.value='';"/>
+					<input type="submit" id="submit" value=""/>
+				</form>
+			</div>
+			<div id="navigation">
+				<ul rabbit:class="com.kuroshio.web.module.menu.SelectMenuForeach" menu="index.rbt,首頁;product_list.rbt,促銷花禮;about.rbt,關於我們;http://flowersuning.pixnet.net/album/list,部落格;tv.rbt,影片列表;contact_us.rbt,連絡我們;map.rbt,門市資訊">
+					<li rabbit:id="listMenu"><a href="index.rbt" rabbit:id="linkMenu"><span rabbit:id="lblMenu">首頁</span></a></li>
+				</ul>
+			</div>
+		
+	
+		</div>
+		<div class="body">
+			
+
+<div rabbit:class="com.kuroshio.web.module.doc.page.client.DocAddPicValidatePage" websiteId="homegowhat">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="accordion radius" >
+  <tr>
+    <td align="center"><a  styleX=";text-decoration: none"><h1>連絡我們</h1></a></td>
+    </tr>
+</table>
+<form method="post" rabbit:id="formMailContactUs">
+<table width="100%" border="1" cellpadding="15"  cellspacing="0">
+  <tr >
+    <td>姓名</td>
+    <td><input type="text" name="textfield" id="textfield" rabbit:id="txtName" /></td>
+  </tr>
+  <tr>
+    <td>電子信箱</td>
+    <td><input type="text" name="textfield2" id="textfield2" rabbit:id="txtEmail" /></td>
+  </tr>
+  <tr>
+    <td>電話</td>
+    <td><input type="text" name="textfield3" id="textfield3" rabbit:id="txtTel"/></td>
+  </tr>
+  <tr>
+    <td>手機</td>
+    <td><input type="text" name="textfield4" id="textfield4" rabbit:id="txtCellphone" /></td>
+  </tr>
+  <tr>
+    <td valign="middle">*建議/問題/指教</td>
+    <td><textarea name="textarea" id="textarea" cols="45" rows="10" rabbit:id="txtDesc"></textarea></td>
+  </tr>
+  <tr >
+    <td>*驗證碼</td>
+    <td >
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         
+          <td></td>
+          <td><input type="text" name="textfield22" rabbit:id="txtCode" /><a style="cursor:pointer;" rabbit:id="jbtnGetNewValidatePic">刷新驗證碼</a></td>
+          </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><input type="submit" name="button" id="button" value="送出" /></td>
+  </tr>
+</table>
+</form>
+</div>
+
+
+			<br />
+			<div class="article">
+				<div class="first">
+					<h3>Please Read</h3>
+					<p>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text.</p>
+					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
+					<p>If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.</p>
+					<p>Before using a template from Free Website Templates, you must read all the for further information <a href="http://www.freewebsitetemplates.com/about/terms">Terms of Use</a></p>
+				</div>
+				<div>
+					<h3>Sed Elementum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum nibh eget justo dapibus eu porttitor purus hendrerit.</p>
+					<a href="http://www.freewebsitetemplates.com">www.freewebsitetemplates.com</a>
+					<a href="http://www.freewebsitetemplates.com/forums/">www.freewebsitetemplates.com/forum</a>
+				</div>
+				<div class="connect">
+					<h2>Follow us</h2>
+					<a href="http://facebook.com/freewebsitetemplates" id="facebook">Facebook</a>
+					<a href="http://twitter.com/fwtemplates" id="twitter">Twitter</a>
+					<a href="#" id="comments">Comments</a>
+					<a href="http://www.flickr.com/freewebsitetemplates/" id="flickr">Flickr</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Copyright &copy; 2015 Kuroshio Digital 版權所有
+</p>
+		</div>
+	</body>
+</html>

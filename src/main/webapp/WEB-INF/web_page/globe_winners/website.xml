@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<htmlDir dir="C:/workspace/kuroshio-web-platform/src/main/webapp/WEB-INF/temp/web/globe_winners" ></htmlDir>
+	<generateDir dir="C:/workspace/kuroshio-web-platform/src/main/webapp/globe_winners" ></generateDir>
+	<!-- 模版-->
+	<!-- TMP要有指定目錄，而不是都到htmlDir底下找
+	<tmp name="fg"  p="template.rbt">
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	-->
+	
+	
+	
+	<tmp name="bg" dir="bg" p="template.rbt">
+		<title >預設title</title>
+		<top p="top.rbt"></top>
+		<center p="預設頁">
+			<!-- 這邊可以加入第幾欄, 這麼什麼名，下面page就要應對什麼名-->
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	<!-- 後台-->
+	<bg dir="bg">
+			<page p="login.rbt" name="登入頁"></page>
+			<page tmp="bg" menu="member_menu.rbt" p="member_manager.rbt" name="會員管理" ></page>
+			<page tmp="bg" menu="member_menu.rbt"  p="member_level_manager.rbt" name="會員等級管理" ></page>
+			<page tmp="bg"  p="member_level_add_panel.rbt" name="新增會員等級" ></page>
+			<!-- 
+			<page tmp="bg"  p="catalog_manager.rbt" name="產品分類管理" ></page>
+			<page tmp="bg"  p="product_manager.rbt" name="產品管理系統" ></page>
+			<page tmp="bg"  p="add_product.rbt" name="新增產品" ></page>
+			<page tmp="bg"  p="menu_manager.rbt" name="目錄管理" ></page>
+			<page tmp="bg"  p="menu_manager2.rbt" name="目錄管理" ></page>
+			<page tmp="bg"  p="menu_add.rbt" name="目錄新增" ></page>
+			<page tmp="bg"  p="menu_edit.rbt" name="目錄修改" ></page>
+			 -->
+	</bg>
+	
+</data>

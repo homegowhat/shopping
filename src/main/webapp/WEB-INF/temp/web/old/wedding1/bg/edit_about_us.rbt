@@ -1,0 +1,348 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />	
+<style type="text/css">
+body {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000), color-stop(.6,#689));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+}
+.holiday{
+background-color: #FF0000;
+}
+.main_nav{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: .2em 0 .2em .5em;
+
+	color: #fff;
+    font-size:12px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000), color-stop(.6,#369));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #000;
+}
+
+
+
+
+.menu_div {
+	font: 100% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+ margin-bottom: 18px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); border-color:#000; 
+
+	padding: .2em 0 .2em .5em;
+
+	background-color:#111;
+	
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+	height:580;
+	width:153;
+}
+#menu4 {
+	width: 150px;
+	margin-top: 10px;
+	margin-left: -6px;
+	border-style: solid solid none solid;
+	border-color: #000;
+	border-size: 1px;
+	border-width: 1px;
+	}
+	
+#menu4 li a {
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 32px;
+	text-decoration: none;
+	}	
+	
+#menu4 li a:link, #menu4 li a:visited {
+	color: #CCC;
+	display: block;
+	background:  url(images/menu4.gif);
+	padding: 8px 0 0 10px;
+	}
+	
+#menu4 li a:hover {
+	color: #FFF;
+	background:  url(images/menu4.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+	}
+
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+    border: none;
+} 
+
+.tableList {font: 100% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+padding: 7px 7px 7px; margin-bottom: 18px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); border-color:#000; 
+}
+.tableList a {color: #3A4856; text-decoration: none; }  
+.tableList a:visited {color: #777;}
+.tableList a:hover {color: #000;}  
+.tableList , .tableList thead {border-left: 1px solid #EAECEE; border-right: 1px solid #EAECEE;; border-top: 1px solid #000000;}
+.tableList {border-bottom: 1px solid #EAECEE;}                
+.tableList td {padding: 5px; }
+.tableList tr.odd {background: #F0F2F4;}
+.listRow {background: #F3F5F7;}
+.listRow:hover {background: #EAECEE; color: #111;}
+.listRowP {background: #FF99CC;}
+
+
+.titleTr{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: .2em 0 .2em .5em;
+	color: #4B4B4B;
+	background-color: #C8C8C8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #999;
+}
+.titleTd{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	 color:#000;
+	text-shadow: white 1px 1px 1px;
+}
+
+
+
+
+input.groovybutton
+{
+   font-size:18px;
+   font-family:Verdana,sans-serif;
+   font-weight:bold;
+   color:#EEFFFF;
+   width:85px;
+   height:30px;
+   background-color:#0088DD;
+   border-style:solid;
+   border-color:#003377;
+   border-width:1px;
+}
+
+.design2{
+background-color:#fffff;
+
+border:2px solid #dbdbdb;
+
+padding:5px;
+
+-webkit-border-radius:7px;
+
+-moz-border-radius:7px;
+
+color: #093;
+
+}
+
+.wrap {
+    text-align: center;
+}
+
+</style>
+<!-- 這段是上傳圖片的，因為HEAD內的沒有搬過來，所以暫用手搬過來-->
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<!-- 這段是產品管理-->
+<style type="text/css">
+ .pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:10px; text-align:center; }
+.pic_no_top ul li img {     width:198px; height:198px; text-align: center; }
+
+#css_table {
+      display:table;
+  }
+.css_tr {
+      display: table-row;
+	  width:198px;
+  }
+.css_td {
+      display: table-cell;
+	  width:198px;
+  }
+</style>
+
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/screen.css" media="screen"/>
+<script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<input rabbit:id="msnMsg" type="hidden" />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div  rabbit:classX="com.kuroshio.web.page.login.BgMenu" class="main_nav" websiteId="farm"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td style="color:#FFF; height:95px"><br />
+      <h4>花沐蘭後台管理系統</h4>
+      <br /></td>
+    <td></td>
+    <td align="right" valign="top"><input style="display:none;" type="button" name="button" id="button" value="登出" rabbit:id="btnLogout" class="logout" /></td>
+  </tr>
+</table>
+</div>
+</td>
+  </tr>
+  <tr>
+    <td align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="10%" align="center" valign="top" style=" padding-top:20px; padding-left:15px">
+   <div >
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+			<li><a href="order_manager.rbt" title="訂單管理">訂單管理</a></li>
+			<li><a href="contact_us_manager.rbt" title="客戶問題">客戶問題</a></li>
+			<li><a href="member_manager.rbt" title="會員管理">會員管理</a></li>
+			<li><a href="slide_pic_panel.rbt" title="輪播圖片上傳">輪播圖片上傳</a></li>
+            <li><a href="slide_pic_manager.rbt" title="輪播圖片排序">輪播圖片排序</a></li>
+            <li><a href="catalog_manager.rbt" title="產品分類管理">產品分類管理</a></li>
+             <li><a href="product_manager.rbt" title="產品管理">產品管理</a></li>
+              <li><a href="edit_about_us.rbt" title="關於我們">關於我們</a></li>
+               <li><a href="youtube_list.rbt" title="YOUTUBE影片列表">YOUTUBE列表</a></li>
+               <li><a href="youtube_add.rbt" title="YOUTUBE影片新增">YOUTUBE新增</a></li>
+                 <li><a href="doc_manager.rbt" title="文章管理">文章管理</a></li>
+		</ul>
+
+    </div>
+    </div>
+</div>
+ 
+    </td>
+    <td align="left" valign="top" style="padding-left:10px;"> 
+$breadcrumbs
+<div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<div  rabbit:class="com.kuroshio.web.module.doc.page.NewsEditPage" websiteId="homegowhat" type="ABOUT_US">
+      <form rabbit:id="form"   method="post">
+    <table border="1" align="center" cellpadding="5" cellspacing="0"  style="width:95%" class="tableList">
+          <thead>
+            <tr  class="titleTr">
+              <td  align="center" class="titleTd" style="height:50px;" colspan="2"  ><span style="text-align:center;font-size:24px;font-weight: bold; color:#000"><span rabbit:id="lblEditTitle" style="display:none;" >新增編輯</span>關於我們</span>
+<input  type="hidden" rabbit:id="txtActType" /></td>
+            </tr>
+            <tr class="titleTr"  style="display:none;" >
+              <th class="titleTd">主旨</th>
+              <th class="titleTd" align="left">
+             		<input type="text" rabbit:id="txtTitle"  size="80" />
+              		<input type="checkbox" name="checkbox" id="checkbox" rabbit:id="chkbxMarquee" style="display:none;" />
+              </th>
+            </tr>
+            <tr class="titleTr">
+              <th class="titleTd">發佈內容
+              <input id="number" name="number" type="hidden" rabbit:id="hiddenNewId" /></th>
+              <th class="titleTd" align="left"><textarea name="textfield"  id="textfield" rabbit:id="txtContent"></textarea></th>
+            </tr>
+          </thead>
+  
+          <tr class="titleTr">
+            <td class="titleTd" colspan="2" align="center">
+              <input type="submit" name="button2" id="button2" value="發佈"  class="groovybutton"  />
+              </td>
+          </tr>
+        </table>
+        </form>
+		<div rabbit:id="divPic" width="1024" height="700" title="選擇圖片">
+				<table class="tableList" width="100%" border="1" cellspacing="0" cellpadding="5" rabbit:id="cmpPic" >
+ 					 <tr class="titleTr">
+   						 <td valign="top" class="listRow" align="center">
+   							 <div class="pic_no_top">   
+   								<ul>  
+  									<li rabbit:id="listPic"><a class="example-image-link" target="_blank"  rabbit:id="linkImg"  data-lightbox="example-set" ><img src="..." border="0"   rabbit:id="imgPic"  class="example-image" /></a></li> 
+  								 </ul> 
+ 							 </div>    
+ 						 </td>
+    				</tr>
+				 </table>
+		</div>
+		
+		<div rabbit:id="divUpload" width="800" height="500" title="上傳圖片">
+    
+    <div class="container">
+    <span class="btn btn-success fileinput-button">
+        <i class="icon-plus icon-white"></i>
+        <span>選取批次上傳的圖片</span>
+        <input id="fileupload" type="file" name="files[]" multiple="multiple" />
+    </span>
+    <br />
+    <br />
+
+    <div id="progress" class="progress progress-success progress-striped">
+        <div class="bar"></div>
+    </div>
+
+    <div id="files"></div>    
+</div>
+<script type="text/javascript">
+$(function () {
+    //var url = './../../upload?type=ABOUT_US&newsId='+$("#hiddenNewId").val();
+    var url = './wedding/x.upload?type=ABOUT_US&newsId='+$("#hiddenNewId").val();
+    $('#fileupload').fileupload({
+        autoUpload: true,
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {//
+               // $('<p/>').text(file.name).appendTo('#files');
+                $('<img width="150" height="150" />').attr("src","./wedding/x.Pic?type=NEWS&id="+file.name).appendTo('#files');
+            });
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    });
+});
+</script>
+		</div>
+
+</div>
+</td></tr></table>
+</td>
+  </tr>
+  <tr>
+    <td align="center" class="main_nav" style="height:105px">
+			 <center><h5>Power by 黑潮數位</h5></center> 
+			 <center><p>Copyright &copy; 2015 Kuroshio Digital 版權所有</p></center>
+
+</td>
+  </tr>
+</table>
+
+
+
+
+	
+
+</body>
+</html>

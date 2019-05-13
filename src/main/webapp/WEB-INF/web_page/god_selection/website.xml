@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<htmlDir dir="C:/workspace/kuroshio-web-platform/src/main/webapp/WEB-INF/temp/web/god_selection" ></htmlDir>
+	<generateDir dir="C:/workspace/kuroshio-web-platform/src/main/webapp/god_selection" ></generateDir>
+	<!-- 模版-->
+	<!-- TMP要有指定目錄，而不是都到htmlDir底下找
+	<tmp name="fg"  p="template.rbt">
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	-->
+	
+	
+	<!-- 前台-->
+	<!--
+	<fg >
+			
+			<page tmp="fg"  p="index.rbt"  name="首頁">
+				<page tmp="fg"  p="product_list.rbt" name="產品列表" >
+					<page tmp="fg"  p="product.rbt" name="產品內容">
+						<page tmp="fg"  p="shopping_car.rbt" name="購物車">
+							 <page tmp="fg"  p="order_page.rbt" name="結帳頁"></page> 
+						</page>
+					</page>
+				</page>
+				 <page tmp="fg"  p="contact_us.rbt" name="連絡我們"></page>
+				<page tmp="fg"  p="about.rbt" name="關於我們"></page>
+				<page tmp="fg"  p="tv.rbt" name="影片列表">
+					<page tmp="fg"  p="youtube.rbt" name="影片播放"></page>
+				</page>
+				 <page tmp="fg"  p="message.rbt" name="系統系訊"></page>
+				 <page tmp="fg"  p="map.rbt" name="門市資訊"></page>
+				 <page tmp="fg"  p="doc.rbt" name="文章內容"></page>
+			</page>
+			
+		
+	</fg>
+	 -->
+	
+	<tmp name="bg" dir="bg" p="template.rbt">
+		<title >預設title</title>
+		<top p="top.rbt"></top>
+		<center p="預設頁">
+			<!-- 這邊可以加入第幾欄, 這麼什麼名，下面page就要應對什麼名-->
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	<!--  
+	<tmp name="bg1" dir="bg" p="template.rbt">
+		<title >預設title</title>
+		<top p="member_menu.rbt"></top>
+		<center p="預設頁">
+		</center>
+		<bottom p="bottom.rbt"></bottom>
+	</tmp>
+	-->
+	<!-- 後台-->
+	<bg dir="bg">
+			<page p="login.rbt" name="登入頁"></page>
+			<page tmp="bg"  p="register_list.rbt" name="掛號列表" ></page>
+			<page tmp="bg"  p="register_list2.rbt" name="掛號列表" ></page>
+			<page tmp="bg"  p="register_list3.rbt" name="掛號列表" ></page>
+            <page tmp="bg"  p="patient_content.rbt" name="病人資料" ></page>
+			<page tmp="bg"  p="patient_manager.rbt" name="病人管理" ></page>
+			<page tmp="bg"  p="patient_add.rbt" name="病人新增" ></page>
+			<page tmp="bg"  p="patient_history.rbt" name="看診記錄" ></page>
+			<page tmp="bg"  p="slide_pic_manager.rbt" name="輪播圖片管理" ></page>
+			<page tmp="bg"  p="slide_pic_panel.rbt" name="輪播圖片上傳" ></page>
+			<page tmp="bg"  p="weight_add.rbt" name="新增體重記錄" ></page>
+			<page tmp="bg"  p="weight_edit.rbt" name="修改體重記錄" ></page>
+			<page tmp="bg"  p="weight_list.rbt" name="體重記錄" ></page>
+			
+			<page  p="client_page.rbt" name="病人使用" ></page>
+			<page  p="slide_pic_page.rbt" name="圖片輪播" ></page>
+			
+			<page  p="signin_page.rbt" name="打卡鐘" ></page>
+			<page  p="card_login_page.rbt" name="卡片登入" ></page>
+			<page tmp="bg"  p="signin_record_page.rbt" name="員工打卡記錄" ></page>
+			<page tmp="bg"  p="signin_record_personal_page.rbt" name="個人打卡記錄" ></page>
+			
+			<page tmp="bg"  p="member_manager.rbt" name="員工管理" ></page>
+			<page tmp="bg"  p="member_add.rbt" name="員工新增" ></page>
+			<page tmp="bg"  p="parttime_payroll_page.rbt" name="工讀薪水計算" ></page>
+			<page tmp="bg"  p="fulltime_payroll_page.rbt" name="正職薪水計算" ></page>
+			<page tmp="bg"  p="punch_manager.rbt" name="打卡記錄" ></page>
+			
+			<page tmp="bg"  p="holiday_manager.rbt" name="假日設定" ></page>
+			<page  p="timer_page.rbt" name="時間選擇" ></page>
+			<page  p="timer2_page.rbt" name="時間選擇" ></page>
+			<page  p="consent_page.rbt" name="同意書" ></page>
+			<page  p="logout_page.rbt" name="登出" ></page>
+	</bg>
+	
+</data>

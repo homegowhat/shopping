@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+
+<body>
+
+<!----start-gallery---->
+	<div class="gallery" rabbit:class="com.kuroshio.web.module.xxx.page.client.ProductListByWeddingPage" websiteId="homegowhat" >
+		<div class="container">
+			<div class="gallery-top heading">
+				<h3>產品列表</h3>
+			</div>
+            <div>目前分類：<span rabbit:id="lblSelectCatalogName">無</span>　
+            <input type="button" name="button7" id="button7" value="選擇分類" rabbit:id="btnShowCatalogList" /><input type="hidden" name="pageCode" id="pageCode" rabbit:id="topPageCode" pagesize="12" />
+            </div>
+			<div class="gallery-bottom">
+				<ul id="og-grid" class="og-grid">
+					<li rabbit:id="listPic">
+						<a  href="product.rbt"  rabbit:id="linkImg"  data-largesrc="" data-title=""  data-description="">
+							<img class="img-responsive" rabbit:id="imgPic" width="300" height="300" />
+						</a>
+						 <div id="css_table">
+      <div class="css_tr image-row">
+          <div class="css_td"></div>
+      </div>
+      <div class="css_tr">
+          <div class="css_td">產品名稱:<span rabbit:id="lblName">1111</span></div>
+      </div>
+      <div class="css_tr">
+          <div class="css_td">價格:<span rabbit:id="lblPrice">1111111</span></div>
+      </div>
+       <div class="css_tr">
+          <div class="css_td"><input type="button" rabbit:id="btnOrderProduct" value="我要訂購" /></div>
+      </div>
+</div>
+					</li>
+					
+					 <div class="clearfix"> </div>
+					</ul>
+			</div>
+		</div>
+		<div style="text-align:center"><input type="hidden" name="pageCode2" id="pageCode3" rabbit:id="downPageCode" pagesize="12" /></div>
+        <div rabbit:id="cmpCatalogTree" style="width:800px;  top:50px;text-align:center;overflow:auto;overflow-x: hidden; ">
+<table  class="blue_form" ><tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>      請選擇要搜尋的產品分類</td>
+    <td align="right"><input type="submit" name="button5" id="button5" value="關閉" rabbit:id="btnCloseTree" class="groovybutton" /></td>
+  </tr>
+</table></td></tr>
+<tr><td>
+ <div rabbit:id="treeCatalog">
+<img src="images/open_16.png" /> 
+<a rabbit:id="linkSelectCatalog">
+ <span rabbit:id="lblTreeCatalogName">樹狀目錄</span>
+</a>
+  </div>
+</td></tr></table>
+</div>
+		
+	</div>
+	<!----end-gallery---->
+	<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
+</body>
+</html>

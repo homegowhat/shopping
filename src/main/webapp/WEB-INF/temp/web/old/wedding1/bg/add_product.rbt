@@ -1,0 +1,373 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />	
+<style type="text/css">
+body {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000), color-stop(.6,#689));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+}
+.holiday{
+background-color: #FF0000;
+}
+.main_nav{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: .2em 0 .2em .5em;
+
+	color: #fff;
+    font-size:12px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000), color-stop(.6,#369));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #000;
+}
+
+
+
+
+.menu_div {
+	font: 100% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+ margin-bottom: 18px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); border-color:#000; 
+
+	padding: .2em 0 .2em .5em;
+
+	background-color:#111;
+	
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+	height:580;
+	width:153;
+}
+#menu4 {
+	width: 150px;
+	margin-top: 10px;
+	margin-left: -6px;
+	border-style: solid solid none solid;
+	border-color: #000;
+	border-size: 1px;
+	border-width: 1px;
+	}
+	
+#menu4 li a {
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 32px;
+	text-decoration: none;
+	}	
+	
+#menu4 li a:link, #menu4 li a:visited {
+	color: #CCC;
+	display: block;
+	background:  url(images/menu4.gif);
+	padding: 8px 0 0 10px;
+	}
+	
+#menu4 li a:hover {
+	color: #FFF;
+	background:  url(images/menu4.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+	}
+
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+    border: none;
+} 
+
+.tableList {font: 100% "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+padding: 7px 7px 7px; margin-bottom: 18px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); border-color:#000; 
+}
+.tableList a {color: #3A4856; text-decoration: none; }  
+.tableList a:visited {color: #777;}
+.tableList a:hover {color: #000;}  
+.tableList , .tableList thead {border-left: 1px solid #EAECEE; border-right: 1px solid #EAECEE;; border-top: 1px solid #000000;}
+.tableList {border-bottom: 1px solid #EAECEE;}                
+.tableList td {padding: 5px; }
+.tableList tr.odd {background: #F0F2F4;}
+.listRow {background: #F3F5F7;}
+.listRow:hover {background: #EAECEE; color: #111;}
+.listRowP {background: #FF99CC;}
+
+
+.titleTr{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: .2em 0 .2em .5em;
+	color: #4B4B4B;
+	background-color: #C8C8C8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #999;
+}
+.titleTd{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	 color:#000;
+	text-shadow: white 1px 1px 1px;
+}
+
+
+
+
+input.groovybutton
+{
+   font-size:18px;
+   font-family:Verdana,sans-serif;
+   font-weight:bold;
+   color:#EEFFFF;
+   width:85px;
+   height:30px;
+   background-color:#0088DD;
+   border-style:solid;
+   border-color:#003377;
+   border-width:1px;
+}
+
+.design2{
+background-color:#fffff;
+
+border:2px solid #dbdbdb;
+
+padding:5px;
+
+-webkit-border-radius:7px;
+
+-moz-border-radius:7px;
+
+color: #093;
+
+}
+
+.wrap {
+    text-align: center;
+}
+
+</style>
+<!-- 這段是上傳圖片的，因為HEAD內的沒有搬過來，所以暫用手搬過來-->
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<!-- 這段是產品管理-->
+<style type="text/css">
+ .pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:10px; text-align:center; }
+.pic_no_top ul li img {     width:198px; height:198px; text-align: center; }
+
+#css_table {
+      display:table;
+  }
+.css_tr {
+      display: table-row;
+	  width:198px;
+  }
+.css_td {
+      display: table-cell;
+	  width:198px;
+  }
+</style>
+
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/screen.css" media="screen"/>
+<script src="js/lightbox-2.6.min.js"></script>
+</head>
+
+<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<input rabbit:id="msnMsg" type="hidden" />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div  rabbit:classX="com.kuroshio.web.page.login.BgMenu" class="main_nav" websiteId="farm"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td style="color:#FFF; height:95px"><br />
+      <h4>花沐蘭後台管理系統</h4>
+      <br /></td>
+    <td></td>
+    <td align="right" valign="top"><input style="display:none;" type="button" name="button" id="button" value="登出" rabbit:id="btnLogout" class="logout" /></td>
+  </tr>
+</table>
+</div>
+</td>
+  </tr>
+  <tr>
+    <td align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="10%" align="center" valign="top" style=" padding-top:20px; padding-left:15px">
+   <div >
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+			<li><a href="order_manager.rbt" title="訂單管理">訂單管理</a></li>
+			<li><a href="contact_us_manager.rbt" title="客戶問題">客戶問題</a></li>
+			<li><a href="member_manager.rbt" title="會員管理">會員管理</a></li>
+			<li><a href="slide_pic_panel.rbt" title="輪播圖片上傳">輪播圖片上傳</a></li>
+            <li><a href="slide_pic_manager.rbt" title="輪播圖片排序">輪播圖片排序</a></li>
+            <li><a href="catalog_manager.rbt" title="產品分類管理">產品分類管理</a></li>
+             <li><a href="product_manager.rbt" title="產品管理">產品管理</a></li>
+              <li><a href="edit_about_us.rbt" title="關於我們">關於我們</a></li>
+               <li><a href="youtube_list.rbt" title="YOUTUBE影片列表">YOUTUBE列表</a></li>
+               <li><a href="youtube_add.rbt" title="YOUTUBE影片新增">YOUTUBE新增</a></li>
+                 <li><a href="doc_manager.rbt" title="文章管理">文章管理</a></li>
+		</ul>
+
+    </div>
+    </div>
+</div>
+ 
+    </td>
+    <td align="left" valign="top" style="padding-left:10px;"> 
+<div rabbit:idX="uploadBlock" rabbit:class="com.kuroshio.web.module.xxx.page.AddProduct" websiteId="homegowhat" styleX="width:800px;  top:150px;text-align:center; " > <div  classX="blue_form" style="width:90%" >
+<form rabbit:id="uploadForm" action="" method="post" enctype="multipart/form-data" >
+        <table border="1" align="center" cellpadding="5" cellspacing="0" style="width:95%"  class="tableList">
+          <tr class="titleTr">
+            <td colspan="2" align="center" nowrap="nowrap" class="titleTd" style="height:50px;"><span class="title_color"><span rabbit:id="lblActType">新增/修改</span>產品</span></td>
+          </tr>
+          <tr class="titleTr">
+            <td nowrap="nowrap" class="titleTd">產品分類</td>
+            <td class="titleTd"><span rabbit:id="lblCatalogName">qweqwe</span><input type="button" name="button2" id="button2" value="選擇分類" rabbit:id="btnSelectCatalog"  />
+            <input rabbit:id="txtCatalogId" type="hidden" name="textfield4" id="textfield4" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品名稱</td>
+            <td class="titleTd"><input type="text" name="textfield3" id="textfield3" rabbit:id="txtProductName" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品價格</td>
+            <td class="titleTd"><input type="text" name="textfield2" id="textfield2" rabbit:id="txtPrice" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">圖片上傳</td>
+            <td class="titleTd"><input type="file" name="fileField" id="fileField" rabbit:id="uploadFile" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">圖片說明</td>
+            <td class="titleTd"><input rabbit:id="txtPicDesc" type="text" name="textfield" id="textfield" /> <input type="button" name="button2" rabbit:id="btnShowPic"  style="display:none;"  /> </td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品說明</td>
+            <td class="titleTd"><textarea name="textarea" id="textarea" cols="45" rows="5" rabbit:id="txtContent"></textarea></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" colspan="2" align="center" nowrap="nowrap"><input rabbit:id="txtProductId" type="hidden" name="textfield5" id="textfield5" />
+              <input type="submit" name="button4" id="button4" value="上傳"  classX="groovybutton"/>
+            <input type="button" name="button6" id="button7" value="取消" rabbit:id="btnCloseForm" class="groovybutton" style="display:none;" /></td>
+          </tr>
+        </table>
+      </form>
+  </div>
+
+<div rabbit:id="cmpCatalogTree1" style="width:800px;  top:50px;text-align:center;overflow:auto;overflow-x: hidden; ">
+<table  class="blue_form" ><tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>      請選擇產品分類</td>
+    <td align="right"><input type="submit" name="button5" id="button5" value="關閉" rabbit:id="btnCloseTree1" class="groovybutton" /></td>
+  </tr>
+</table></td></tr>
+<tr><td>
+ <div rabbit:id="treeCatalog1">
+<img src="images/open_16.png" /> 
+<a rabbit:id="linkSelectCatalog1">
+ <span rabbit:id="lblTreeCatalogName1">樹狀目錄</span>
+</a>
+  </div>
+</td></tr></table>
+</div>
+
+<div rabbit:id="divPic" style="width:1024px; height:800px; left:180px;">
+<table width="100%" border="1" cellspacing="0" cellpadding="5" class="tableList" rabbit:id="cmpPic">
+  <tr class="titleTr">
+    <td colspan="3" align="center" class="titleTd" style="height:50px;"><span class="title_color">尋找圖片</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="3" align="center" class="titleTd"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+          <td>目前分類：<span rabbit:id="lblSelectCatalogName">無</span>　
+            <input type="button" name="button7" id="button7" value="選擇分類" rabbit:id="btnShowCatalogList" /></td>
+          <td><table>
+            <tr>
+              <td style="white-space:nowrap; "><input type="hidden" name="hiddenField3" id="hiddenField3" rabbit:id="txtCustomerPageCode" />
+                客戶資料筆數:&nbsp;<span rabbit:id="lblCustomerCount">111</span>&nbsp;&nbsp;&nbsp;&nbsp;目前在第&nbsp;<span rabbit:id="lblCustomerPageCode">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;共&nbsp;<span rabbit:id="lblCustomerPageCount">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td rabbit:id="cmpCustomerPage"><a title="第一頁" href="#" rabbit:id="btnCustomerFirstPage">第一頁 </a><a title="上一頁" href="#" rabbit:id="btnCustomerPrePage">| &lt;上一頁 </a><a title="下一頁" href="#" rabbit:id="btnCustomerNextPage">| 下一頁&gt; </a><a title="最終頁" href="#" rabbit:id="btnCustomerLastPage">| 最終頁</a></td>
+            </tr>
+          </table></td>
+          <td align="right"><input type="button" name="button3" id="button2" value="取消選擇" rabbit:id="btnClosePicDiv" /></td>
+          </tr>
+      </table>    </td>
+  </tr>
+  <tr class="titleTr">
+    <td class="titleTd">圖片列表</td>
+    </tr>
+  <tr>
+    <td valign="top" class="listRow">
+    <div class="pic_no_top">   
+   <ul>  
+  <li rabbit:id="listPic" pageSize="8"><a style="cursor:pointer;" target="_blank"  rabbit:id="linkImg"><img src="..." border="0"  rabbit:id="imgPic" width="200" height="200" /></a></li> 
+   </ul> 
+ </div>    </td>
+    </tr>
+  <tr class="titleTr">
+    <td align="center" class="titleTd">&nbsp;</td>
+    </tr>
+</table>
+</div>
+
+
+<div rabbit:id="cmpCatalogTree" style="width:800px;  top:50px;text-align:center;overflow:auto;overflow-x: hidden;">
+<table  class="blue_form" ><tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>      請選擇要搜尋的圖片分類</td>
+    <td align="right"><input type="submit" name="button5" id="button5" value="關閉" rabbit:id="btnCloseTree" class="groovybutton" /></td>
+  </tr>
+</table></td></tr>
+<tr><td>
+ <div rabbit:id="treeCatalog">
+<img src="images/open_16.png" /> 
+<a rabbit:id="linkSelectCatalog" style="cursor:pointer;">
+ <span rabbit:id="lblTreeCatalogName">樹狀目錄</span>
+</a>
+  </div>
+</td></tr></table>
+</div>
+
+</div>
+</td></tr></table>
+</td>
+  </tr>
+  <tr>
+    <td align="center" class="main_nav" style="height:105px">
+			 <center><h5>Power by 黑潮數位</h5></center> 
+			 <center><p>Copyright &copy; 2015 Kuroshio Digital 版權所有</p></center>
+
+</td>
+  </tr>
+</table>
+
+
+
+
+	
+
+</body>
+</html>

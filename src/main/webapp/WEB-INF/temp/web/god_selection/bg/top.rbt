@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<div rabbit:class="com.kuroshio.web.module.menu.page.RuleMenuPage" websiteId="homeaddsalt">
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+			<!--<li><a href="register_list.rbt" title="掛號列表">掛號列表</a></li>-->
+			<li rabbit:id="cmp1"><a href="register_list2.rbt" title="掛號列表">掛號列表</a></li>
+			
+			<li rabbit:id="cmp2"><a href="register_list3.rbt" title="掛號列表">掛號列表</a></li>
+			<li rabbit:id="cmp3"><a href="patient_manager.rbt" title="病人管理">病人管理</a></li>
+			<li rabbit:id="cmp4"><a href="patient_add.rbt" title="新增病人">新增病人</a></li>
+			<li rabbit:id="cmp5"><a href="client_page.rbt" target="_blank" >病歷視窗</a></li>
+			<li ><a  title="薪資規則" > </a></li>
+		     
+			   
+		 	<li rabbit:id="cmp7"><a href="member_manager.rbt" title="員工管理" >員工管理</a></li>
+			<li rabbit:id="cmp8"><a href="member_add.rbt" title="新增員工" >新增員工</a></li>
+			  <li rabbit:id="cmp10"><a href="holiday_manager.rbt" title="假日設定" >假日設定</a></li>
+		   
+		   <!--
+		    <li rabbit:id="cmp6"><a href="salary_manager.rbt" title="薪資規則" >薪水規則</a></li>
+		       
+			<li rabbit:id="cmp9"><a href="salary_manager" title="門診設定" >門診設定</a></li>
+		    
+			<li rabbit:id="cmp11"><a href="slide_pic_manager.rbt" title="輪播圖片管理" >輪播圖片管理</a></li>
+			<li rabbit:id="cmp12"><a href="slide_pic_panel.rbt" title="輪播圖片上傳" >輪播圖片上傳</a></li>
+        -->
+			
+		</ul>
+
+    </div>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/tab.css" />
+    <script type="text/javascript" src="js/tab.js"></script>
+</head>
+<script>
+$(function() {
+    $("#txtKeyword").focus();
+});
+</script>
+	<body>
+		<br/><br/><br/><br/>
+		
+        <div rabbit:class="com.shopping.web.bg.page.ManufacturerManager" align="center"> 
+		
+   			<div class="abgne_tab">
+            <ul class="tabs">
+                <li class="active" rabbit:id="listCatalog"><a href="#tab1" rabbit:id="btnCatalog"><span rabbit:id="lblCatalog">全部</span></a></li>
+            </ul>
+            <div class="tab_container">
+ 			 <div id="tab1">
+        	<table  style="margin:0 auto;width:850;" border="0"  cellpadding="10" cellspacing="0"  >
+        	 <tr>
+                <td align="left">
+                   
+						<div class="input-group">
+  <span class="input-group-addon">關鍵字</span>
+   <input class="form-control" type="text" rabbit:id="txtKeyword" placeholder="欲搜尋的文字"/> 
+  <span class="input-group-btn">
+        <button class="btn btn-default" rabbit:id="btnKeyword" type="image"  src="images/studaplayvotepic/select.png">搜尋</button>
+      </span>
+</div> 
+                </td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                
+                
+                <td align="right">
+                     	 <a href="manufacturer_add.rbt">
+                     	 <button type="button"  class="btn btn-Primary">
+     						<span class="glyphicon glyphicon-plus"></span>新增
+						 </button>
+                     	 </a>
+       		 <input type="hidden" rabbit:id="txtCatalog" />
+                </td>
+            </tr></table>
+        	<table  style="margin:0 auto;width:100%;" border="1"  cellpadding="10" cellspacing="0" rabbit:id="cmpStore" >
+        	 <tr>
+                <td align="center">
+                    <span>廠商名稱</span>
+                </td>
+                <td align="center">
+                    <span>網址</span>
+                </td>
+                <td align="center">
+                    <span>修改</span>
+                </td>
+            </tr>
+				<tr rabbit:id="listStores">
+					<td align="center" width="20%">
+						<span rabbit:id="lblSName"></span>
+					</td>
+					<td align="center" width="40%">
+						<span rabbit:id="lblSDesp"></span>
+					</td>
+					<td align="center" width="40%">
+						
+<a href="StoreAdd.tiles" rabbit:id="modifyStor">
+ <button type="button"  class="btn btn-Info">
+     <span class="glyphicon glyphicon-home"></span>修改資料
+ </button>
+</a>
+<a rabbit:id="btnDel">
+ <button type="button" class="btn btn-Danger">
+     <span class="glyphicon glyphicon-minus-sign"></span>刪除
+ </button>
+</a>
+					
+					</td>
+				</tr>
+			<tr>
+					<td colspan="3">
+						<input type="hidden" rabbit:id="txtPageCode" />
+					</td>
+				</tr>
+			</table>
+			</div></div></div>
+	</div>
+	</body>
+</html>

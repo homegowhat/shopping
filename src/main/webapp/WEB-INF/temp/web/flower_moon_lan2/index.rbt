@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.CatalogReleasePanel" websiteId="homegowhat" type="INDEX"  style="text-align:center;">
+
+	<div  class="featured">
+	<div class="about">
+		<div class="container">
+			
+			<div class="about-bottom" >
+				<p><span rabbit:id="lblContent"></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</body>
+</html>

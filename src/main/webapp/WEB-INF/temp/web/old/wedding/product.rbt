@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>花沐蘭</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+  <link href="http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" type="text/css"/>
+   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type='text/css" /> 
+
+<!---- start-smoth-scrolling---->
+
+
+<!---- start-smoth-scrolling---->
+<style type="text/css">
+.banner{
+	
+	min-height:430px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+</head>
+
+<body>
+	<!----start-body---->
+	
+	<!----start-header---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.rbt"><img src="images/lg-2.png" alt="" /></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.rbt">首頁</a><span> </span></li>
+					<li><a href="about.rbt">關於我們</a><span> </span></li>
+					<li><a href="product_list.rbt">產品列表</a><span> </span></li>
+					<li><a href="#">部落格</a><span> </span></li>
+					<li><a href="tv.rbt">影片列表</a><span> </span></li>
+					<li><a href="#">連絡我們</a><span> </span></li>
+				</ul>
+			</div>
+				 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		</div>
+	</div>	
+	<!----end-header---->
+	<!--banner-starts-->
+	<div classX="bnr" id="home">
+		<div  id="top" class="callbacks_container" rabbit:class="com.kuroshio.web.module.picture.page.client.SlidePicIndex" websiteId="homegowhat" type="SLIDE">
+			<ul class="rslides" id="slider4">
+			    <li rabbit:id="listImgItem">
+					<div class="banner" rabbit:id="cmpImg" style="background:url(../images/bnr.jpg) no-repeat;">
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<!--banner-ends--> 
+	<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    $(function () {
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!----end-banner---->
+
+	<!----end-body---->
+	<!----start-body---->
+	
+<div rabbit:class="com.kuroshio.web.module.xxx.page.client.ProductContent" websiteId="homegowhat">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0"  style="background-color:#060; font-size:24px;" class="accordion radius" >
+  <tr>
+    <td align="center"><a style=" color:#FFF;text-decoration: none">產品說明</a></td>
+    </tr>
+</table>
+<table  border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a class="example-image-link" href="#"  rabbit:id="linkImg"  data-lightbox="example-set" title="試一下title囉~~"><img  class="example-image"  src="https://stamp.post.gov.tw/post/stamp_mall/product_pic/otus.JPG" alt="點擊看原圖"  width="400" rabbit:id="imgProduct" /></a></td>
+    <td valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>名稱</td>
+        <td><span rabbit:id="lblName">123</span></td>
+      </tr>
+      <tr>
+        <td>分類</td>
+        <td><span rabbit:id="lblCatalog">123</span></td>
+      </tr>
+      <tr>
+        <td>訂價</td>
+        <td><span rabbit:id="lblMoney">123</span></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" name="button" id="button" value="加到購物車" rabbit:id="btnOrderProduct" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2">產品介紹</td>
+  </tr>
+  <tr>
+    <td colspan="2"><span rabbit:id="lblContent">1111111111111</span></td>
+  </tr>
+</table>
+</div>
+
+	<!----end-body---->
+	<!----start-footer---->
+	
+	<div class="footer">
+		<div class="container">
+			
+			
+			<div class="footer-text">
+				<p>Copyright &copy; 2015 Kuroshio Digital 版權所有</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<!----end-footer---->
+</body>
+</html>

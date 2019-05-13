@@ -1,0 +1,11 @@
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+			<li><a href="bg.tiles" title="後台首頁">後台首頁</a></li>
+			<li><a href="work_punch.tiles" title="上班打卡">上班打卡</a></li>
+			<li><a href="work_punch_set.tiles" title="出缺勤設定">出缺勤設定</a></li>
+			<li><a href="holiday_set.tiles" title="假日設定">假日設定</a></li>
+		</ul>
+
+    </div>
+    </div>

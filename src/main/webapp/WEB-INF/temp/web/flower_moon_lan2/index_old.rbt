@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<div id="links">
+        	<div id="cat_link" class="category">
+        	<a href="product.aspx?type=1" hidefocus="true">花束設計訂製</a>
+        	<a href="product.aspx?type=6" hidefocus="true">瓶花盆花訂製</a>
+        	<img src="images/line.png"/>
+        	<a href="product.aspx?type=2" hidefocus="true">藝術高架訂製</a>
+        	<a href="product.aspx?type=8" hidefocus="true">花禮設計訂製</a>
+        	<img src="images/line.png"/>
+        	<a href="product.aspx?type=7" hidefocus="true">盆栽盆景訂製</a>
+        	<a href="product.aspx?type=9" hidefocus="true">蘭花設計訂製</a>
+        	<img src="images/line.png"/>
+        	<a href="product.aspx?type=11" hidefocus="true">包月花藝訂製</a>
+        	<a href="product.aspx?type=11" hidefocus="true">包月花藝訂製</a>
+        	<img src="images/line.png"/>
+        	</div>
+            <div id="news_rep" class="news">
+            	<a href="news.aspx?did=15" hidefocus="true">時尚中國東方紅-婚禮佈置</a>
+            	<a href="news.aspx?did=15" hidefocus="true">時尚中國東方紅</a>
+            	<img src="images/line.png"/>
+            	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+            	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+           		<img src="images/line.png"/>
+             	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+            	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+            	<img src="images/line.png"/>
+             	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+            	<a href="news.aspx?did=12" hidefocus="true">奢華普吉島婚禮佈置</a>
+            	<img src="images/line.png"/>
+            </div>
+            <div class="quicklink">
+	    		<a href="http://www.weddingtime.com.tw/home/p-00.asp" hidefocus="true">婚禮顧問</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-03.asp" hidefocus="true">婚禮主持</a>
+                <img src="images/line.png"/>
+                
+	    		<a href="http://www.weddingtime.com.tw/home/p-08.asp" hidefocus="true">婚宴佈置</a>
+                <a href="http://www.weddingtime.com.tw/home/p-04.asp" hidefocus="true">攝影錄影</a>
+                <img src="images/line.png"/>
+	    		<a href="http://www.weddingtime.com.tw/home/p-05.asp" hidefocus="true">新娘秘書</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-10.asp" hidefocus="true">婚禮音樂</a>
+                <img src="images/line.png"/>
+                <a href="http://www.weddingtime.com.tw/home/p-06.asp" hidefocus="true">婚禮影片</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-10.asp" hidefocus="true">婚禮樂團</a>
+	    		<img src="images/line.png"/>
+	    		<a href="http://www.weddingtime.com.tw/home/p-07.asp" hidefocus="true">婚禮小物</a>
+	    		<img src="images/line.png"/>
+   	  		</div>
+        </div>
+		
+	</body>
+</html>

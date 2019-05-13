@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+	<body>
+	<div  rabbit:class="com.kuroshio.web.module.member.page.MemberManager" >
+	
+	<div >
+   <input  type="text" rabbit:id="keyword" placeholder="姓名/ID"  /> 
+   <input  type="text" rabbit:id="c" placeholder="手機"  />
+   <select rabbit:id="g" ></select>
+   <select rabbit:id="t" ></select>
+   <input  type="text" rabbit:id="st" placeholder="註冊時間"  />
+   <input  type="text" rabbit:id="et" placeholder="註冊時間"  />
+   <select rabbit:id="l" ></select>
+   <select rabbit:id="p" ></select>
+   <select rabbit:id="s" ></select>
+        <button class="btn btn-default" rabbit:id="btnKeyword" type="image"  src="studaplayvotepic/select.png">搜尋</button>
+	</div> 
+
+<table rabbit:id="cmpTable" border="1" cellpadding="10" cellspacing="0"  alignX="center">
+				<tr>
+					<th rabbit:id="listTitle"><span rabbit:id="lblTitle"></span></th>
+				</tr>
+				<tr rabbit:id="listRow" t_n="article" c_n="create_date,title,">
+					<td rabbit:id="listCell">
+						<span rabbit:id="lbl0" ></span>
+						<img rabbit:id="img0" />
+						<button type="button"  class="btn btn-default" rabbit:id="btn1">
+							<span rabbit:id="lblIcon1" class="glyphicon glyphicon-flash"></span>
+							<span rabbit:id="lblB1"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn2">
+							<span rabbit:id="lblIcon2" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB2"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn3">
+							<span rabbit:id="lblIcon3" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB3"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn4">
+							<span rabbit:id="lblIcon4" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB4"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn5">
+							<span rabbit:id="lblIcon5" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB5"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn6">
+							<span rabbit:id="lblIcon6" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB6"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn7">
+							<span rabbit:id="lblIcon7" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB7"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn8">
+							<span rabbit:id="lblIcon8" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB8"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn9">
+							<span rabbit:id="lblIcon9" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB9"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn10">
+							<span rabbit:id="lblIcon10" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB10"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn11">
+							<span rabbit:id="lblIcon11" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB11"></span>
+						</button>
+						<button type="button"  class="btn btn-default" rabbit:id="btn12">
+							<span rabbit:id="lblIcon12" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="lblB12"></span>
+						</button>
+						<a href="#" rabbit:id="link1" >
+							<span rabbit:id="lblL1" ></span>
+							<img rabbit:id="img1" />
+						</a>
+						<a href="#" rabbit:id="link2" >
+							<span rabbit:id="lblL2" ></span>
+							<img rabbit:id="img2" />
+						</a>
+						<a href="#" rabbit:id="link3" >
+							<span rabbit:id="lblL3" ></span>
+							<img rabbit:id="img3" />
+						</a>
+						<a href="#" rabbit:id="link4" >
+							<span rabbit:id="lblL4" ></span>
+							<img rabbit:id="img4" />
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td rabbit:id="cmpPagination" colspan="5" align="center">
+						<input type="hidden" rabbit:id="pgPageCode" />
+					</td>
+				</tr>
+			</table>
+			
+
+			</div>
+			</body>
+</html>

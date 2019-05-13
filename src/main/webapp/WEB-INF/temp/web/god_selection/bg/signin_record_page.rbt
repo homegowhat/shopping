@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div    rabbit:class="com.kuroshio.web.office.signin.page.SigninRecordPage">
+<input type="hidden" rabbit:id="txtId" />
+<table  width="60%" border="1" cellspacing="0" cellpadding="5" class="tableList">
+  <tr class="titleTr">
+    <td colspan="5" align="center"><input type="button" rabbit:id="jbtnBeforeMonth" value="上個月" />&nbsp;&nbsp;
+	<input type="hidden" rabbit:id="txtYearMonth" /><span rabbit:id="lblYear">2012</span>年<span rabbit:id="lblMonth">12</span>月&nbsp;&nbsp;<input type="button" rabbit:id="jbtnNextMonth" value="下個月" /></td>
+  </tr>
+   <tbody rabbit:id="cmpWork">
+  <tr class="titleTr">
+    <td colspan="5" align="center">姓名:<span rabbit:id="lblUsername">2012</span><input type="button" rabbit:id="jbtnGo2PayrollPage" value="薪水計算" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td>日期</td>
+    <td>打卡時間</td>
+     <td>功能</td>
+  </tr>
+ 
+  <tr class="listRow" rabbit:id="listTime">
+    <td><span rabbit:id="lblDate">1</span></td>
+    <td><span rabbit:id="lblSignIn">07:59</span></td>
+    <td><input rabbit:id="btnEdit" type="button" value="新增打卡記錄" /></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

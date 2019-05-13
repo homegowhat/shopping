@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<div rabbit:idX="uploadBlock" rabbit:class="com.kuroshio.web.module.xxx.page.AddProduct" websiteId="homegowhat" styleX="width:800px;  top:150px;text-align:center; " > <div  classX="blue_form" style="width:90%" >
+<form rabbit:id="uploadForm" action="" method="post" enctype="multipart/form-data" goto="product_mamager.rbt" >
+        <table border="1" align="center" cellpadding="5" cellspacing="0" style="width:95%"  class="tableList">
+          <tr class="titleTr">
+            <td colspan="2" align="center" nowrap="nowrap" class="titleTd" style="height:50px;"><span class="title_color"><span rabbit:id="lblActType">新增/修改</span>產品</span></td>
+          </tr>
+          <tr class="titleTr">
+            <td nowrap="nowrap" class="titleTd">產品分類</td>
+            <td class="titleTd"><span rabbit:id="lblCatalogName">qweqwe</span><input type="button" name="button2" id="button2" value="選擇分類" rabbit:id="btnSelectCatalog"  />
+            <input rabbit:id="txtCatalogId" type="hidden" name="textfield4" id="textfield4" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品編號</td>
+            <td class="titleTd"><input type="text" name="textfield7" id="textfield7" rabbit:id="txtProductNum" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品名稱</td>
+            <td class="titleTd"><input type="text" name="textfield3" id="textfield3" rabbit:id="txtProductName" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品定價</td>
+            <td class="titleTd"><input type="text" name="textfield6" id="textfield6" rabbit:id="txtPrice" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品特價</td>
+            <td class="titleTd"><input type="text" name="textfield2" id="textfield2" rabbit:id="txtMoney" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">圖片上傳</td>
+            <td class="titleTd"><input type="file" name="fileField" id="fileField" rabbit:id="uploadFile" /></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">簡述</td>
+            <td class="titleTd"><input rabbit:id="txtPicDesc" type="text" name="textfield" id="textfield" /> <input type="button" name="button2" rabbit:id="btnShowPic"  style="display:none;"  /> </td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" nowrap="nowrap">產品說明</td>
+            <td class="titleTd"><textarea name="textarea" id="textarea" cols="45" rows="5" rabbit:id="txtContent"></textarea></td>
+          </tr>
+          <tr class="titleTr">
+            <td class="titleTd" colspan="2" align="center" nowrap="nowrap"><input rabbit:id="txtProductId" type="hidden" name="textfield5" id="textfield5" />
+              <input type="submit" name="button4" id="button4" value="上傳"  classX="groovybutton"/>
+            <input type="button" name="button6" id="button7" value="取消" rabbit:id="btnCloseForm" class="groovybutton" style="display:none;" /></td>
+          </tr>
+        </table>
+      </form>
+  </div>
+
+<div rabbit:id="cmpCatalogTree1" classX="modal fade" width="800" height="850" style="widthX:800px;  topX:50px;text-alignX:center;overflow:auto;overflow-x: hidden; ">
+<table  class="blue_form" ><tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>      請選擇產品分類</td>
+    <td align="right"><input type="submit" style="display:none;" name="button5" id="button5" value="關閉" rabbit:id="btnCloseTree1" class="groovybutton" /></td>
+  </tr>
+</table></td></tr>
+<tr><td>
+ <div rabbit:id="treeCatalog1">
+<img src="images/open_16.png" /> 
+<a rabbit:id="linkSelectCatalog1">
+ <span rabbit:id="lblTreeCatalogName1">樹狀目錄</span>
+</a>
+  </div>
+</td></tr></table>
+</div>
+
+<div rabbit:id="divPic"  width="800" height="850" style="width:1024px; height:800px; leftX:180px;">
+<table width="100%" border="1" cellspacing="0" cellpadding="5" class="tableList" rabbit:id="cmpPic">
+  <tr class="titleTr">
+    <td colspan="3" align="center" class="titleTd" style="height:50px;"><span class="title_color">尋找圖片</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="3" align="center" class="titleTd"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+          <td>目前分類：<span rabbit:id="lblSelectCatalogName">無</span>　
+            <input type="button" name="button7" id="button7" value="選擇分類" rabbit:id="btnShowCatalogList" /></td>
+          <td><table>
+            <tr>
+              <td style="white-space:nowrap; "><input type="hidden" name="hiddenField3" id="hiddenField3" rabbit:id="txtCustomerPageCode" />
+                客戶資料筆數:&nbsp;<span rabbit:id="lblCustomerCount">111</span>&nbsp;&nbsp;&nbsp;&nbsp;目前在第&nbsp;<span rabbit:id="lblCustomerPageCode">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;共&nbsp;<span rabbit:id="lblCustomerPageCount">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td rabbit:id="cmpCustomerPage"><a title="第一頁" href="#" rabbit:id="btnCustomerFirstPage">第一頁 </a><a title="上一頁" href="#" rabbit:id="btnCustomerPrePage">| &lt;上一頁 </a><a title="下一頁" href="#" rabbit:id="btnCustomerNextPage">| 下一頁&gt; </a><a title="最終頁" href="#" rabbit:id="btnCustomerLastPage">| 最終頁</a></td>
+            </tr>
+          </table></td>
+          <td align="right"><input type="button" name="button3" id="button2" value="取消選擇" rabbit:id="btnClosePicDiv" /></td>
+          </tr>
+      </table>    </td>
+  </tr>
+  <tr class="titleTr">
+    <td class="titleTd">圖片列表</td>
+    </tr>
+  <tr>
+    <td valign="top" class="listRow">
+    <div class="pic_no_top">   
+   <ul>  
+  <li rabbit:id="listPic" pageSize="8"><a style="cursor:pointer;" target="_blank"  rabbit:id="linkImg"><img src="..." border="0"  rabbit:id="imgPic" width="200" height="200" /></a></li> 
+   </ul> 
+ </div>    </td>
+    </tr>
+  <tr class="titleTr">
+    <td align="center" class="titleTd">&nbsp;</td>
+    </tr>
+</table>
+</div>
+
+
+<div rabbit:id="cmpCatalogTree" classX="modal fade" width="800" height="850" style="widthx:800px;  topX:50px;text-alignX:center;overflow:auto;overflow-x: hidden;">
+<table  classx="blue_form" ><tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>      請選擇要搜尋的圖片分類</td>
+    <td align="right"><input type="submit" name="button5" id="button5" style="display:none;" value="關閉" rabbit:id="btnCloseTree" class="groovybutton" /></td>
+  </tr>
+</table></td></tr>
+<tr><td>
+ <div rabbit:id="treeCatalog">
+<img src="images/open_16.png" /> 
+<a rabbit:id="linkSelectCatalog" style="cursor:pointer;">
+ <span rabbit:id="lblTreeCatalogName">樹狀目錄</span>
+</a>
+  </div>
+</td></tr></table>
+</div>
+
+</div>
+</body>
+</html>

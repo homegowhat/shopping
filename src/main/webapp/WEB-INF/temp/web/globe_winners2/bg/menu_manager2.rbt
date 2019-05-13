@@ -1,0 +1,86 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+</head>
+
+<body>
+
+<div rabbit:class="com.kuroshio.web.module.menu.page.SelectMenuTreeManager" websiteId="yuming">
+<table width="98%"  border="1" cellspacing="0" cellpadding="3" class="tableList" >
+  <tr class="titleTr">
+    <td  align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">前台目錄管理</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td  align="center" class="titleTd" style="height:50px;"><table  rabbit:id="cmpCatalogTree" >
+      <tr>
+        <td>請選擇要建立在哪個的目錄底下          </td>
+      </tr>
+      <tr>
+        <td>當前選擇的目錄 : <span rabbit:id="lblSelectCatalog">xxxxxx</span><input type="button" rabbit:id="btnShowAddFolder" value="新增目錄" /></td>
+      </tr>
+      <tr>
+        <td><div rabbit:id="treeCatalog" style="white-space:nowrap"> <img src="images/open_16.png" /> <a rabbit:id="linkSelectCatalog"> <span rabbit:id="lblTreeCatalogName">樹狀目錄
+         
+        </span> </a>
+            <input name="button2" type="button" value="修改" rabbit:id="btnShowEditFolder" />
+            <input name="button12" type="button" value="編輯" rabbit:id="btnGoEdit" data-toggle="modal" data-target="#myModal" />
+           
+            <input name="button12" type="button" value="XXX" data-toggle="modal" data-target="#myModal" />
+            <input name="button12" type="button" value="上移" rabbit:id="btnUp" />
+            <input name="button12" type="button" value="下移" rabbit:id="btnDown" />
+            <input name="button22" type="button" value="刪除" rabbit:id="btnShowDelFolder" />
+</div></td>
+      </tr>
+    </table></td>
+  </tr>
+ 
+</table>
+<div rabbit:id="cmpAddFolder"  style="width:800px; height:400p; top:100px;text-align:center; ">
+<div  class="blue_form">
+    <table border="0">
+      <tr>
+        <td>請輸入目錄名稱</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>目錄名稱:<input type="hidden" rabbit:id="txtFolderId" />
+        <input type="text" rabbit:id="txtFolderName" /></td>
+        <td>目錄類型:<select rabbit:id="sltMenuType"></select></td>
+        <td><input type="button" name="button5" id="button5" value="確定" rabbit:id="btnAddCatalog" />
+        <input type="button" rabbit:id="btnCloseAddFolder" value="取消" /></td>
+      </tr>
+    </table>
+  
+</div>
+</div>
+
+  <div rabbit:id="cmpEditFolder"  style="width:800px; height:400p; top:100px;text-align:center; ">
+      <div  class="blue_form">
+        <table border="0">
+          <tr>
+            <td>請輸入要修改的分類名稱</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input type="hidden" rabbit:id="txtCatalogId" />
+              <input type="text" rabbit:id="txtCatalogName" /></td>
+            <td><input type="button" name="button" id="button" value="確定" rabbit:id="btnEditCatalog" />
+              <input type="button" rabbit:id="btnCloseEditFolder" value="取消" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+<div rabbit:id="pop" style="top:0px;weight:1624px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<input type="button" value="關閉" rabbit:id="btnClose" />
+<iframe rabbit:id="frame" name="nam" width="100%" height="100%" src="catalog_manager.rbt"  scrolling="auto"  frameborder="0"></iframe>
+
+</div>
+</div>
+
+
+</body>
+</html>

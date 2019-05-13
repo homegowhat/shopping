@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ #cmpTable a{
+  padding-top:20px;
+ }
+  #cmpTable li {
+  padding:0px;
+  display:table-cell;
+   width:150;
+   heightX:50;
+  vertical-align:middle;
+  text-align:center;
+  font-size:18px;
+  }
+  
+ 
+  </style>
+  
+  
+</head>
+	<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+	<div rabbit:class="com.kuroshio.web.medicine.patient.page.RegisterManagerWBS" websiteId="homeaddsalt" demoType="xml" filePath="/WEB-INF/data/list.xml">
+<div rabbit:id="cmpTable" class="list-group" border="1"  >
+				 <a  class=" list-group-item active" >
+				<ul class="sort-disabled" style="color:#fff;">
+					<li rabbit:id="listTitle" t_c="掛號列表,,"><h3><span rabbit:id="lblTitle">發表時間</span></h3></li>
+				</ul>
+				</a>
+				 <a href="#" class="list-group-item"  rabbit:id="listRow" >
+				 	<ul  t_n="article" c_n="create_date,title,">
+						 <li rabbit:id="listCell"  style="display:inline;">
+						 	<span rabbit:id="lbl0" ></span>
+						 	<img style="vertical-align:middle;" rabbit:id="img0" />
+						 	<button type="button"  class="btn btn-Warning" rabbit:id="btn1">
+						 		<span rabbit:id="lblIcon1" class="glyphicon glyphicon-cutlery"></span>
+						 		<span rabbit:id="lblB1">菜單資料管理</span>
+						 	</button>
+						 	<a href="#" rabbit:id="link1" >
+						 		<span rabbit:id="lblL1" ></span>
+						 		<img rabbit:id="img1" />
+						 	</a>
+						 </li>
+					</ul>
+				 </a>
+			</div>
+			<input type="hidden" rabbit:id="txtOldSort" /><input type="hidden" rabbit:id="txtSort" />
+			</div>
+			<div  rabbit:class="com.kuroshio.web.module.frame.page.FramePage" websiteId="homeaddsalt">
+	<input id="OrderTeamId" type="hidden" value="999" />
+	<input rabbit:id="txtWbs" type="hidden" />
+	<a  value="link" rabbit:id="btnLink" style="display:none;">LINK1</a><a style="display:none;"  value="link2" rabbit:id="btnLink2" >LINK2</a>
+	<input type="hidden" rabbit:id="txtId" />
+	
+	<div  style="display:none;">
+    <div class="chat-window " id="chat_window_1" >
+        <div class="col-xs-12 col-md-12">
+        	<div class="panel panel-default"  style="background:#999999">
+                <div class="panel-heading top-bar"  id="char_bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span>訊息通知</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="text-align: right;">
+                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+                    </div>
+                </div>
+                
+                <div class="abgne_tab"  style="background:#999999;margin:0px">
+            		<ul  class="tabs"  style="width: 100%">
+            			<li class=""><a href="#msgMember" data-toggle="tab">成員</a></li>
+                		<li class="active"><a href="#msgPanel" data-toggle="tab">訊息</a></li>
+               		</ul>
+               		<div  class="tab-content">
+               			<div id="msgPanel"  class="active">
+                			<div id="messages"  class="panel-body msg_container_base"></div>
+                     	</div>
+                     	<div id="msgMember" style="display:none;">
+                			<div id="members"  class="panel-body msg_container_base"></div>
+                    	 </div>
+                     </div>
+                 </div>
+                     
+                <div class="panel-footer">
+                    <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn  btn-sm" id="showImgBtn" onClick="showImgDiv()">img</button>
+                        </span>
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="這邊填入訊息..."  onKeyUp="if(event.keyCode == 13) sendMessage()" />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat" onClick="sendMessage()">送出</button>
+                        </span>
+                    </div>
+                </div>
+                
+                 <div style="display:none;">
+                <video id="msgVideo"  controls="controls"  src="mp3/msg.mp3">
+您的浏览器不支持 video 标签。
+</video>
+                </div>
+                
+               
+    		</div>
+        </div>
+    </div>
+ 
+</div>
+    <div  id="faceul" class="chat-window " style="border:1px;width:280px;background-color: #000000;display:none;">
+   <input type="button" onClick="closeImageDiv()" value="close" />
+    <ul>  
+  		<li ><a onClick="sendImage('b')" ><img src="images/push/b.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('c8')" ><img src="images/push/c8.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('f')" ><img src="images/push/f.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('g')" ><img src="images/push/g.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('g1')" ><img src="images/push/g1.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('h')" ><img src="images/push/h.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('cry')" ><img src="images/push/cry.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('h1')" ><img src="images/push/h1.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('l')" ><img src="images/push/l.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('l1')" ><img src="images/push/l1.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('l2')" ><img src="images/push/l2.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('n')" ><img src="images/push/n.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('n1')" ><img src="images/push/n1.jpg" border="0" width="80" height="80" /></a></li> 
+  		<li ><a onClick="sendImage('s')" ><img src="images/push/s.jpg" border="0" width="80" height="80" /></a></li>
+  		<li ><a onClick="sendImage('w')" ><img src="images/push/w.jpg" border="0" width="80" height="80" /></a></li> 
+   
+   </ul>
+    </div>
+<script type="text/javascript" src="js/chat.js"></script>
+</div>
+			
+			</body>
+</html>

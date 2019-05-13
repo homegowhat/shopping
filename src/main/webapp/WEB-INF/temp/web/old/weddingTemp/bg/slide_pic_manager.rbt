@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ #cmpTable a{
+  padding-top:20px;
+ }
+  #cmpTable li {
+  padding:0px;
+  display:table-cell;
+   width:150;
+   heightX:50;
+  vertical-align:middle;
+  text-align:center;
+  font-size:18px;
+  }
+  
+ 
+  </style>
+  
+  
+</head>
+	<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+	$breadcrumbs
+	<div rabbit:class="com.kuroshio.web.module.picture.page.SlidePicSortListPage" websiteId="homegowhat" type="SLIDE">
+<div rabbit:id="cmpTable" class="list-group" border="1"  >
+				 <a  class=" list-group-item active" >
+				<ul class="sort-disabled" style="color:#fff;">
+					<li rabbit:id="listTitle" t_c="排序,圖片"><h3><span rabbit:id="lblTitle">發表時間</span></h3></li>
+				</ul>
+				</a>
+				 <a href="#" class="list-group-item"  rabbit:id="listRow" >
+				 	<ul  t_n="article" c_n="create_date,title,">
+						 <li rabbit:id="listCell" >
+						 	<span rabbit:id="lbl0" ></span>
+						 	<img style="vertical-align:middle;" rabbit:id="img0" width="100" />
+						 	<button type="button"  class="btn btn-Warning" rabbit:id="btn1">
+						 		<span rabbit:id="lblIcon1" class="glyphicon glyphicon-cutlery"></span>
+						 		<span rabbit:id="lblB1">菜單資料管理</span>
+						 	</button>
+						 	<a href="#" rabbit:id="link1" >
+						 		<span rabbit:id="lblL1" ></span>
+						 		<img rabbit:id="img1" />
+						 	</a>
+						 </li>
+					</ul>
+				 </a>
+			</div>
+			<input type="hidden" rabbit:id="txtSort" />
+			</div>
+			
+			
+			</body>
+</html>

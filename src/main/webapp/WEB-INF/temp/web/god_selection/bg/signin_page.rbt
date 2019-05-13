@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="icon" href="images/favicon.ico" />
+<title>天選打卡鐘</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/card_signin.css" rel="stylesheet" />
+</head>
+<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" /><br /><br /><br />
+<div rabbit:class="com.kuroshio.web.office.signin.page.SignInPage" style="text-align:center">
+	<div><h1><span><span rabbit:id="lblToday"></span>	<input type="text" rabbit:id="box"  />	打卡記錄</span></h1></div>
+	<table border="1" cellpadding="10" cellspacing="0"  align="center">
+	
+	<tbody  rabbit:id="jcmpTable">
+				<tr>
+					<th rabbit:id="jlistTitle" ><span rabbit:id="jlblTitle">發表時間</span></th>
+				</tr>
+				<tr rabbit:id="jlistRow" t_n="article" c_n="create_date,title,">
+					<td rabbit:id="jlistCell">
+						<span rabbit:id="jlbl0" ></span>
+						<img rabbit:id="jimg0" />
+						<button type="button"  class="btn btn-Warning" rabbit:id="jbtn1">
+							<span rabbit:id="jlblIcon1" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="jlblB1">菜單資料管理</span>
+						</button>
+						<a href="#" rabbit:id="jlink1" >
+							<span rabbit:id="jlblL1" ></span>
+							<img rabbit:id="jimg1" />
+						</a>
+					</td>
+				</tr>
+				
+				</tbody>
+			</table>
+		
+</div>
+</body>
+<script>
+
+
+</script>
+</html>

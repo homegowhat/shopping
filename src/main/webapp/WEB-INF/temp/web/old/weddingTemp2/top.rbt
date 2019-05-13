@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+	<!----start-header---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.rbt"><img src="images/lg-2.png" alt="" /></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.rbt">首頁</a><span> </span></li>
+					<li><a href="about.rbt">關於我們</a><span> </span></li>
+					<li><a href="product_list.rbt">產品列表</a><span> </span></li>
+					<li><a href="#">部落格</a><span> </span></li>
+					<li><a href="tv.rbt">影片列表</a><span> </span></li>
+					<li><a href="contact_us.rbt">連絡我們</a><span> </span></li>
+				</ul>
+			</div>
+				 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		</div>
+	</div>	
+	<!----end-header---->
+	<!--banner-starts-->
+	<div classX="bnr" id="home">
+		<div  id="top" class="callbacks_container" rabbit:class="com.kuroshio.web.module.picture.page.client.SlidePicIndex" websiteId="homegowhat" type="SLIDE">
+			<ul class="rslides" id="slider4">
+			    <li rabbit:id="listImgItem">
+					<div class="banner" rabbit:id="cmpImg" style="background:url(../images/bnr.jpg) no-repeat;">
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<!--banner-ends--> 
+	<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    $(function () {
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!----end-banner---->
+</body>
+</html>

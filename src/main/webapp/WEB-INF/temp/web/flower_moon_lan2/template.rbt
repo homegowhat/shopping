@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="花店,網路花店,台北花店,台中花店,高雄花店" />
+<meta name="description" content="台中花舖花店專業於設計花束10年,服務項目:網路花店,台北花店,台中花店,高雄花店,FLOWERSUN99台中花舖花禮專送店" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="all" />
+<!-- css -->
+	<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="css/main.css" />
+    
+<title>:::花沐蘭婚禮佈置:::</title>
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+    <!-- JS.innerfade -->
+    
+  	$head
+</head>
+<body>
+
+
+    
+	<!--header here-->
+    <div id="header">
+   	  	$top
+    </div>
+    
+
+	<!-- 輪撥圖片 -->
+	<div  rabbit:class="com.kuroshio.web.module.picture.page.client.SlidePicIndexFromDirPicById" websiteId="homegowhat" websiteDir="flower_moon_lan2" type="UPLOAD2DIR" u="slides" >
+	<div id="slideshow">
+		<div id="slide" >			
+			    <li  rabbit:id="listImgItem">
+                		<img  rabbit:id="cmpImg" u="image" src="../img/landscape/01.jpg" />
+                </li>
+            </div>
+		</div>
+	</div>
+	
+    <!--links here-->
+    <div id="linksBG">
+    	$body
+    </div>
+    
+    	    
+    <!--footer here-->
+    <div id="footer">
+    $bottom
+	</div>
+ 	<!--go to top-->
+    <div id="goTop"></div>
+
+
+    <script type="text/javascript">
+	    $(document).ready(
+				function(){
+					
+					$('#slide').innerfade({
+						animationtype: 'fade',
+						speed: 1000,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '430px'
+					});
+					
+					
+				}
+		);
+
+  	</script>
+</body>
+</html>

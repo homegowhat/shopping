@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div  class="row"  rabbit:class="com.kuroshio.web.office.payroll.page.FullTimePayrollPage">
+<div class="col-xs-9" >
+<input type="hidden" rabbit:id="txtId" />
+<table  width="100%" border="1" cellspacing="0" cellpadding="5" class="tableList">
+ <tr class="titleTr">
+    <td colspan="7" align="center"><h1>正職-薪資計算</h1></td>
+  </tr>
+ <tr class="titleTr">
+    <td colspan="7" align="center"><input type="button" rabbit:id="jbtnBeforeMonth" value="上個月" />&nbsp;&nbsp;
+	<input type="hidden" rabbit:id="txtYearMonth" /><span rabbit:id="lblYear">2012</span>年<span rabbit:id="lblMonth">12</span>月&nbsp;&nbsp;<input type="button" rabbit:id="jbtnNextMonth" value="下個月" /></td>
+  </tr>
+   <tbody rabbit:id="cmpWork">
+  <tr class="titleTr">
+    <td colspan="7" align="center">姓名:<span rabbit:id="lblUsername">2012</span></td>
+  </tr>
+  <tr class="titleTr">
+    <td>日期</td>
+    <td>打卡時間</td>
+    <td>應上診數</td>
+    <td>實上診數</td>
+    <td>遲到扣薪</td>
+    <td>加班分鐘</td>
+     <td>功能</td>
+  </tr>
+ 
+  <tr class="listRow" rabbit:id="listTime">
+    <td><span rabbit:id="lblDate">1</span></td>
+    <td><span rabbit:id="lblSignIn">07:59</span></td>
+    
+    <td><span rabbit:id="lblWTd"></span></td>
+    <td><span rabbit:id="lblWTRd"></span></td>
+    <td><span rabbit:id="lblLm">07:59</span></td>
+    
+    <td><span rabbit:id="lblMm">07:59</span></td>
+    <td><input rabbit:id="btnEdit" type="button" value="新增打卡記錄" />
+    <input rabbit:id="btnHoliday" type="button" value="設為假日" />
+     <input rabbit:id="btnOvertime" type="button" value="加班" />
+    
+    </td>
+  </tr>
+  <tr class="listRow" >
+    <td >小計</td>
+    <td></td>
+     <td><span rabbit:id="lblWT"></span></td>
+      <td><span rabbit:id="lblWTR"></span></td> 
+      
+      <td><span rabbit:idx="lblWT"></span></td>
+    <td><span rabbit:id="lblTotalMm">07:59</span></td>
+    <td></td>
+  </tr>
+   <tr class="titleTr">
+    <td></td>
+    <td>打卡時間</td>
+    <td>應上診數</td>
+    <td>實上診數</td>
+    <td>遲到扣薪</td>
+    <td>加班分鐘</td>
+     <td></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<div class="col-xs-3" >
+<table  width="100%" border="1" cellspacing="0" cellpadding="2" class="tableList">
+ <tr class="titleTr">
+    <td colspan="2" align="center">
+	個人基本資訊</td>
+  </tr>
+   <tr class="titleTr">
+    <td colspan="2" align="center">底薪:<input type="text" rabbit:id="txtBaseMoney" /></td>
+  </tr>
+   <tr class="titleTr">
+    <td colspan="2" align="center">診薪:<input type="text" rabbit:id="txtWorkCountMoney" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="2" align="center">全勤:<input type="text" rabbit:id="txtFullWork" /></td>
+  </tr>
+   <tr class="titleTr">
+    <td colspan="2" align="center">清潔:<input type="text" rabbit:id="txtCleanMoney" /></td>
+  </tr>
+   <tr class="titleTr">
+    <td colspan="2" align="center">健保:<input type="text" rabbit:id="txtJBMoney" /></td>
+  </tr>
+   <tr class="titleTr">
+    <td colspan="2" align="center">勞保:<input type="text" rabbit:id="txtLBMoney" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="2" align="center">時薪:<input type="text" rabbit:id="txtHourMoney" /><input type="hidden" rabbit:id="txtTotalMm" /></td>
+  </tr>
+  <tr class="titleTr">
+    <td colspan="2" align="center">
+	<input type="button" rabbit:id="jbtnSaveBaseData" value="儲存" /></td>
+  </tr>
+  </table>
+  <table  width="100%" border="1" cellspacing="0" cellpadding="2" class="tableList">
+ <tr class="titleTr">
+    <td colspan="2" align="center">
+	項目:<input type="text" rabbit:id="txtKey"  />金錢:<input type="text" rabbit:id="txtValue"  /><input type="button" rabbit:id="jbtnAddMoney" value="新增/刷新" /></td>
+  </tr>
+  <tr
+  <tr  class="titleTr">
+    <td  align="center">診數</td>
+    <td  align="center"><input type="text" rabbit:id="txtWorkCount" /></td>
+  </tr>  
+  <tr  class="titleTr">
+    <td  align="center">病人數抽成</td>
+    <td  align="center"><input type="text" rabbit:id="txtpCountMoney" /></td>
+  </tr>
+  <tr  class="titleTr">
+    <td  align="center">請假</td>
+    <td  align="center">
+    <input type="text" rabbit:id="txtHolidayCount" />
+    <input type="hidden" rabbit:id="txtOvertimeMoney"  />
+    <input type="hidden" rabbit:id="txtDelayMoney"  />
+    </td>
+  </tr>
+  
+  <tbody rabbit:id="cmpPay">
+  <tr  class="titleTr">
+    <td  align="center">本薪</td>
+    <td  align="center"><span rabbit:id="lblTrueBaseMoney"></span></td>
+  </tr>
+   <tr  class="titleTr">
+    <td  align="center">診數</td>
+    <td  align="center"><span rabbit:id="lblWorkCountMoney"></span></td>
+  </tr>
+  <tr  class="titleTr">
+    <td  align="center">遲到扣薪</td>
+    <td  align="center"><span rabbit:id="lblDelayMoney"></span></td>
+  </tr>
+  <tr class="titleTr">
+    <td  align="center">加班</td>
+    <td  align="center"><span rabbit:id="lblTm"></span></td>
+  </tr>
+  <tr rabbit:id="listKV" class="titleTr">
+    <td  align="center"><span rabbit:id="lblKey"></span></td>
+    <td  align="center"><span rabbit:id="lblValue"></span></td>
+  </tr>
+  <tr  class="titleTr">
+    <td  align="center">總計</td>
+    <td  align="center"><span rabbit:id="lblTotal"></span></td>
+  </tr>
+  </tbody>
+   <tr  class="titleTr">
+    <td colspan="2" align="center"><input type="button" rabbit:id="jbtnSave" value="儲存結果" /></td>
+ </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

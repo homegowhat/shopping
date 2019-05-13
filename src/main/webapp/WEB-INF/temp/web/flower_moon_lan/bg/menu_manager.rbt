@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ #cmpTable a{
+  padding-top:20px;
+ }
+  #cmpTable li {
+  padding:0px;
+  display:table-cell;
+   width:150;
+   heightX:50;
+  vertical-align:middle;
+  text-align:center;
+  font-size:18px;
+  }
+  
+ 
+  </style>
+  
+  
+</head>
+	<body>
+	$breadcrumbs
+	<input type="button" onclick="location.href='menu_add.rbt'" value="新增" />
+	<div rabbit:class="com.kuroshio.web.module.menu.page.SelectMenuSortListWithBtnPage" websiteId="homegowhat" type="SLIDE">
+<div rabbit:id="cmpTable" class="list-group tableList" border="1" style="width:100%" >
+				 <a  class=" list-group-item titleTr" >
+				<div class="wrap">
+				<ul class="sort-disabled" style="color:#fff;">
+					<li  rabbit:id="listTitle" style="display: inline; "  t_c="請用滑鼠拖拉來決定圖片輪播順序"><span rabbit:id="lblTitle" style="font-size:24px;font-weight: bold; color:#000">發表時間</span></li>
+				</ul>
+				</div>
+				</a>
+				 <a href="#" class="list-group-item"  rabbit:id="listRow" >
+				 <div class="wrap">
+				 	<ul  t_n="article" c_n="create_date,title,">
+						 <li rabbit:id="listCell" style="display: inline; " >
+						 <span rabbit:id="lbl0" ></span>
+						 	<img style="vertical-align:middle;" rabbit:id="img0" width="300" />
+						 	<button type="button"  class="btn btn-Warning" rabbit:id="btn1">
+						 		<span rabbit:id="lblIcon1" class="glyphicon glyphicon-cutlery"></span>
+						 		<span rabbit:id="lblB1">菜單資料管理</span>
+						 	</button>
+						 	<a href="#" rabbit:id="link1" >
+						 		<span rabbit:id="lblL1" ></span>
+						 		<img rabbit:id="img1" />
+						 	</a>
+						 </li>
+					</ul>
+					</div>
+				 </a>
+			</div>
+			<input type="hidden" rabbit:id="txtSort" />
+			</div>
+			
+			
+			</body>
+</html>

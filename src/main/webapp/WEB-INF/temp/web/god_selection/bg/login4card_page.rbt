@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="icon" href="images/favicon.ico" />
+<title>天選卡片登入系統</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/signin.css" rel="stylesheet" />
+</head>
+<body><div rabbit:class="os.rabbit.component.tmp.BootstrapTemplate" />
+<div rabbit:class="com.kuroshio.web.office.signin.page.CardLoginPage" style="text-align:center" goto="signin_record_personal_page.rbt">
+	
+	<h1>天選中醫 <input type="text" rabbit:id="box"  /> 卡片登入系統</h1>
+	
+			
+</div>
+</body>
+
+</html>

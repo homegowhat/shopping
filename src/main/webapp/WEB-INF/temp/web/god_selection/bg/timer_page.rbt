@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<div rabbit:class="com.kuroshio.web.tool.page.TimerPage">
+請選擇您要的日期和時間<br />
+<input type="text" rabbit:id="txtTime" />
+<input type="hidden" rabbit:id="txtUserId" />
+<input type="button" value="送出" rabbit:id="jbtnSubmit" />
+</div>
+</body>
+</html>

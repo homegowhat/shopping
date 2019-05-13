@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div  rabbit:class="com.kuroshio.web.medicine.patient.page.WeightList" websiteId="homeaddsalt" demoType="xml" filePath="/WEB-INF/data/list.xml">
+	<BR/>
+			<table border="1" cellpadding="10" cellspacing="0"  class="tableList" width="98%">
+				<tr class="titleTr">
+    <td colspan="9" align="center" class="titleTd" style="height:50px;"><span style="font-size:24px;font-weight: bold; color:#000">病人管理</span></td>
+  </tr>
+				<tr class="titleTr">
+					<td colspan="6" align="center" >
+						姓名:<span rabbit:id="lblName"></span>
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td colspan="6" align="center" >
+						身高:<span rabbit:id="lblTall"></span>
+					</td>
+				</tr>
+				<tbody  rabbit:id="jcmpTable">
+				<tr class="titleTr">
+					<th  class="titleTd" rabbit:id="jlistTitle" t_c="日期,體重,腰圍,體脂,修改,刪除"><span rabbit:id="jlblTitle">發表時間</span></th>
+				</tr>
+				<tr class="listRow" rabbit:id="jlistRow" t_n="article" c_n="create_date,title,">
+					<td rabbit:id="jlistCell"  class="titleTd">
+						<span rabbit:id="jlbl0" ></span>
+						<img rabbit:id="jimg0" />
+						<button type="button"  class="btn btn-Warning" rabbit:id="jbtn1">
+							<span rabbit:id="jlblIcon1" class="glyphicon glyphicon-cutlery"></span>
+							<span rabbit:id="jlblB1">菜單資料管理</span>
+						</button>
+						<a href="#" rabbit:id="jlink1" >
+							<span rabbit:id="jlblL1" ></span>
+							<img rabbit:id="jimg1" />
+						</a>
+					</td>
+				</tr>
+				<tr class="titleTr">
+					<td class="titleTd" rabbit:id="jcmpPagination" colspan="5" align="center">
+						<table width="100%">
+						<tr>
+							<td align="center" style="white-space:nowrap; ">
+								<input type="hidden"  rabbit:id="jtxtPageCode" /><input type="hidden"  rabbit:id="jtxtPageSize" />
+                資料筆數:&nbsp;<span rabbit:id="jlblCount">111</span>&nbsp;&nbsp;&nbsp;&nbsp;目前在第&nbsp;<span rabbit:id="jlblPageCode">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;共&nbsp;<span rabbit:id="jlblPageCount">1</span>&nbsp;頁&nbsp;&nbsp;&nbsp;&nbsp;
+                			</td>
+            			</tr>
+            			<tr>
+              				<td align="center" rabbit:id="jcmpPage"><a title="第一頁" style="cursor:pointer;" rabbit:id="jbtnFirstPage">第一頁 </a><a title="上一頁" style="cursor:pointer;" rabbit:id="jbtnPrePage">| &lt;上一頁 </a><a title="下一頁" style="cursor:pointer;" rabbit:id="jbtnNextPage">| 下一頁&gt; </a><a title="最終頁" style="cursor:pointer;" rabbit:id="jbtnLastPage">| 最終頁</a></td>
+            			</tr>
+			
+          			</table>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+	
+</div>
+</body>
+</html>

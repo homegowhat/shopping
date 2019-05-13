@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<div >
+  <div class="menu_div">
+    <div id="menu4">
+		<ul>
+		    <li><a href="salary_manager.rbt" title="薪資規則" >薪水規則</a></li>
+		          
+		 	<li><a href="member_manager.rbt" title="員工管理" >員工管理</a></li>
+			<li><a href="member_add.rbt" title="新增員工" >新增員工</a></li>
+			 
+			<li><a href="salary_manager" title="門診設定" >門診設定</a></li>
+		    <li><a href="holiday_manager" title="假日設定" >假日設定</a></li>
+		    
+			<li><a href="slide_pic_manager.rbt" title="輪播圖片管理" >輪播圖片管理</a></li>
+			<li><a href="slide_pic_panel.rbt" title="輪播圖片上傳" >輪播圖片上傳</a></li>
+        
+			<li><a href="patient_manager.rbt" >掛號系統</a></li>
+		</ul>
+
+    </div>
+    </div>
+   </div>
+</body>
+</html>

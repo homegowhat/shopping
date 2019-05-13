@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>handlebars</title>
+  <style>
+    table {
+      text-align: center;
+      margin: 0 auto;
+      width: 600px;
+    }
+    table, td {
+      border: solid 1px black;
+    }
+  </style>
+  <script src="./handlebars_files/jquery-1.11.3.min.js"></script><style type="text/css"></style>
+ <script>
+    "use strict";
+    $(function(){
+      $.getJSON("https://raw.githubusercontent.com/g0v/ly-tel/master/web/data/mly-8.json", function(data){
+        var rowData = "";
+        $.each(data, function(index, value){
+          rowData += '<tr>';
+          rowData += '<td>' + parseInt(index + 1) + '</td>';
+          rowData += '<td><img src="' + value.avatar + '" /></td>';
+          rowData += '<td>' + value.name + '</td>';
+          if (value.caucus == "KMT") {
+        	    rowData += '<td style="background: blue;color:white">' + value.caucus + '</td>'
+        	} 
+        	else if (value.caucus == "DPP") {
+        	    rowData += '<td style="background: green; color:white">' + value.caucus + '</td>'
+        	}
+        	else {
+        	    rowData += '<td>' + value.caucus + '</td>';
+        	}
+          rowData += '</tr>';
+        });
+        $("#main-data").html(rowData);
+      })
+    });
+  </script>
+
+</head>
+<body>
+  <main>
+    <h1>Handlebars</h1>
+    <table>
+      <thead>
+        <tr>
+<th>No.</th>
+          <th>圖像</th>
+          <th>姓名</th>
+          <th>政黨</th>
+
+        </tr>
+      </thead>
+      <tbody id="main-data">
+        <!-- ?????J?o?? -->
+      </tbody>
+    </table>
+  </main>
+
+
+</body></html>

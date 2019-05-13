@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head><title>
+	花沐蘭
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=8" /><meta name="title" content="花意空間" /><meta name="keywords" content="花意空間" /><meta name="description" content="花意空間" /><link rel="image src" href="images/thumb.jpg" />
+    <!-- facebook/orkut -->
+	<meta property="og:title" /><meta property="og:image" content="images/thumb.jpg" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" rev="stylesheet" media="screen" href="css/main.css" />
+    <!-- javascript -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+    <!-- JS.innerfade -->
+    <script type="text/javascript">
+	   $(document).ready(
+				function(){
+					$("#header .sub .sub1").hover(
+						function(){
+						//document["subpic"].src = "images/sub_01.jpg";
+						document["subpic"].src = "images/sub_01.jpg";
+							$("#pageImage").stop().animate({opacity: 1})
+						},function(){
+							$("#pageImage").stop().animate({opacity: 0})
+						}
+					);
+					$("#header .sub .sub2").hover(
+						function(){
+						//document["subpic"].src = "images/sub_02.jpg";
+						document["subpic"].src = "UploadImage/sub_02.jpg";
+							$("#pageImage").stop().animate({opacity: 1})
+						},function(){
+							$("#pageImage").stop().animate({opacity: 0})
+						}
+					);
+					$("#header .sub .sub3").hover(
+						function(){
+						//document["subpic"].src = "images/sub_03.jpg";
+						document["subpic"].src = "images/sub_03.jpg";
+							$("#pageImage").stop().animate({opacity: 1})
+						},function(){
+							$("#pageImage").stop().animate({opacity: 0})
+						}
+					);
+					$('#slide').innerfade({
+						animationtype: 'fade',
+						speed: 1000,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '430px'
+					});
+					//把news篩選
+					//string.Blength() 傳回字串的byte長度   
+
+					String.prototype.sub = function(n) {     
+						var r = /[^\x00-\xff]/ig;    
+						if(this.replace(r, "mm").length <= n) {
+							var tempF = this;
+							for(var k=this.replace(r, "mm").length;k<=n+3;k++){
+								tempF+=".";
+							}
+							return tempF;
+						}
+						// n = n - 3;     
+						var m = Math.floor(n/2);     
+						for(var i=m; i<this.length; i++) {     
+							if(this.substr(0, i).replace(r, "mm").length>=n) {     
+								return this.substr(0, i) +"..."; 
+							}     
+						} return this;    
+					};
+					var $news = $("#links div.news").find("a");
+					for(var i=0;i<$news.length;i++){
+						var tempStr = $news.eq(i).html().sub(30)+'...<img src="images/read.jpg"/>';
+						$news.eq(i).html(tempStr);
+					}
+					//偵測捲軸
+					$(window).scroll(function(){
+						if($(this).scrollTop()!= 0 ){
+							$("#goTop").stop().animate({opacity: 1})
+						}else{
+							$("#goTop").stop().animate({opacity: 0})
+						}
+					});
+					// 讓捲軸用動畫的方式移動到 #header 的 top 位置
+					$("#goTop").click(function(){
+						var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+						$body.animate({scrollTop: 0}, 600);	 
+						return false;
+					});
+					//gotop初始
+					if($(this).scrollTop()!= 0 ){
+						$("#goTop").stop().animate({opacity: 1})
+					}else{
+						$("#goTop").stop().animate({opacity: 0})
+					}	
+				}
+		);
+  	</script>
+</head>
+<body>
+
+    <form method="post" action="index.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc4MjAyNTcxNA9kFgICAw9kFgRmDxYCHglpbm5lcmh0bWwFxgQ8YSBocmVmPSJwcm9kdWN0LmFzcHg/dHlwZT0xIiBoaWRlZm9jdXM9InRydWUiPnzoirHmnZ/oqK3oqIjoqILoo718PC9hPjxhIGhyZWY9InByb2R1Y3QuYXNweD90eXBlPTYiIGhpZGVmb2N1cz0idHJ1ZSI+fOeTtuiKseebhuiKseioguijvXw8L2E+PGltZyBzcmM9ImltYWdlcy9saW5lLnBuZyIvPjxhIGhyZWY9InByb2R1Y3QuYXNweD90eXBlPTIiIGhpZGVmb2N1cz0idHJ1ZSI+fOiXneihk+mrmOaetuioguijvXw8L2E+PGEgaHJlZj0icHJvZHVjdC5hc3B4P3R5cGU9OCIgaGlkZWZvY3VzPSJ0cnVlIj586Iqx56au6Kit6KiI6KiC6KO9fDwvYT48aW1nIHNyYz0iaW1hZ2VzL2xpbmUucG5nIi8+PGEgaHJlZj0icHJvZHVjdC5hc3B4P3R5cGU9NyIgaGlkZWZvY3VzPSJ0cnVlIj5855uG5qC955uG5pmv6KiC6KO9fDwvYT48YSBocmVmPSJwcm9kdWN0LmFzcHg/dHlwZT05IiBoaWRlZm9jdXM9InRydWUiPnzomK3oirHoqK3oqIjoqILoo718PC9hPjxpbWcgc3JjPSJpbWFnZXMvbGluZS5wbmciLz48YSBocmVmPSJwcm9kdWN0LmFzcHg/dHlwZT0xMSIgaGlkZWZvY3VzPSJ0cnVlIj585YyF5pyI6Iqx6Jed6KiC6KO9fDwvYT5kAgEPFgIfAAWzATxhIGhyZWY9Im5ld3MuYXNweD9kaWQ9MTUiPuaZguWwmuS4reWci+adseaWuee0hS3lqZrnpq7kvYjnva48L2E+PGltZyBzcmM9ImltYWdlcy9saW5lLnBuZyIvPjxhIGhyZWY9Im5ld3MuYXNweD9kaWQ9MTIiPuWlouiPr+aZruWQieWztuWpmuemruS9iOe9rjwvYT48aW1nIHNyYz0iaW1hZ2VzL2xpbmUucG5nIi8+ZGRx+zQA11dGNSLvGbvrJb2nml1VllGGx0CGEVUEzjDX2Q==" />
+</div>
+
+    
+	<!--header here-->
+    <div id="header">
+   	  	<div class="logo">
+    		<a href="index.aspx" hidefocus="true"><img src="images/logo.jpg" alt="花意空間" /></a>      	</div>
+   	  <div class="sub">
+	    	<a class="sub1" href="http://www.flowerpc.com.tw/product.aspx?type=1" hidefocus="true"></a>
+	    	<!--<a class="sub2" href="http://www.flowerpc.com.tw/home/mr_zone/prod.asp" hidefocus="true"></a>-->
+	    	<a class="sub2" href="http://www.flowerpc.com.tw/mr_index.aspx" hidefocus="true"></a>
+	    	<a class="sub3" href="http://www.weddingtime.com.tw/home/index.htm" hidefocus="true"></a>
+   	  </div>
+      <div id="band">
+   	  </div>
+    </div>
+    
+
+	<!-- 輪撥圖片 -->
+	<div id="slideshow">
+    	<div id="pageImage">					
+		    <img name="subpic" src="images/main_03.jpg" alt="" />
+		</div>
+		<div id="slide" >			
+             <li id="listImgItem" rId="listImgItem" ><img src="UploadImage/fp-11.jpg"" /></li><li id="listImgItem" rId="listImgItem" ><img src="UploadImage/fp-8.jpg"" /></li><li><img src="UploadImage/fp-7.jpg"" /></li><li><img src="UploadImage/fp-6.jpg"" /></li><li><img src="UploadImage/fp-5.jpg"" /></li><li><img src="UploadImage/fp-4.jpg"" /></li><li><img src="UploadImage/fp-2.jpg"" /></li><li><img src="UploadImage/sub_01拷貝.jpg"" /></li>
+		</div>
+	</div>
+	
+    <!--links here-->
+    <div id="linksBG">
+    	<div id="links">
+        	<div id="cat_link" class="category"><a href="product.aspx?type=1" hidefocus="true">|花束設計訂製|</a><a href="product.aspx?type=6" hidefocus="true">|瓶花盆花訂製|</a><img src="images/line.png"/><a href="product.aspx?type=2" hidefocus="true">|藝術高架訂製|</a><a href="product.aspx?type=8" hidefocus="true">|花禮設計訂製|</a><img src="images/line.png"/><a href="product.aspx?type=7" hidefocus="true">|盆栽盆景訂製|</a><a href="product.aspx?type=9" hidefocus="true">|蘭花設計訂製|</a><img src="images/line.png"/><a href="product.aspx?type=11" hidefocus="true">|包月花藝訂製|</a></div>
+            <div id="news_rep" class="news"><a href="news.aspx?did=15">時尚中國東方紅-婚禮佈置</a><img src="images/line.png"/><a href="news.aspx?did=12">奢華普吉島婚禮佈置</a><img src="images/line.png"/></div>
+            <div class="quicklink">
+	    		<a href="http://www.weddingtime.com.tw/home/p-00.asp" hidefocus="true">婚禮顧問</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-03.asp" hidefocus="true">婚禮主持</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-08.asp" hidefocus="true">婚宴佈置</a>
+                <img src="images/line.png"/>
+                <a href="http://www.weddingtime.com.tw/home/p-04.asp" hidefocus="true">攝影錄影</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-05.asp" hidefocus="true">新娘秘書</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-10.asp" hidefocus="true">婚禮音樂</a>
+                <img src="images/line.png"/>
+                <a href="http://www.weddingtime.com.tw/home/p-06.asp" hidefocus="true">婚禮影片</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-10.asp" hidefocus="true">婚禮樂團</a>
+	    		<a href="http://www.weddingtime.com.tw/home/p-07.asp" hidefocus="true">婚禮小物</a>
+   	  		</div>
+        </div>
+    </div>
+    
+    	    
+    <!--footer here-->
+    <div id="footer">
+    
+
+<a href="https://www.facebook.com/flowerpc?fref=ts" target="_blank"><img  border="0"  src="/images/facebook.jpg" /></a>
+
+    	Copyright © 2012 Flower Space All Rights Reserved.│Design by <a href="http://dxc.tw" target="_blank">DXC creative studio</a><br/>
+        「花意空間花苑 」/ 住址：台北市基隆路二段33-2號 / 聯絡電話：02-2378-9013 FAX：02-2378-9015 / Mail：<a href="mailto:flowers.pc@msa.hinet.net" target="_blank">flowers.pc@msa.hinet.net</a>
+	</div>
+ 	<!--go to top-->
+    <div id="goTop"></div>
+<script type="text/javascript">
+	function over(name1,name2)   {
+    	document[name1].src = name2;
+	}
+	function out(name1,name2)  {
+    	document[name1].src = name2;
+	}
+	function pushFacebook(){
+		//window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(document.URL)),'_blank')
+	}
+</script>
+
+
+    </form>
+</body>
+</html>

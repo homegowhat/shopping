@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/screen.css" media="screen"/>
+<script src="js/lightbox-2.6.min.js"></script>
+<style type="text/css">
+ .pic_no_top { clear:both; overflow:hidden; }
+.pic_no_top ul { list-style-type:none;     margin:0px; } 
+.pic_no_top ul li {     float:left;padding:10px; text-align:center; }
+.pic_no_top ul li img {     width:300px; height:300px; text-align: center; }
+</style>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css" />
+</head>
+
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+
+
+<body>
+<div rabbit:class="com.shopping.web.bg.page.PictureManager"  >
+<br /><br /><br /><br />
+<div rabbit:id="uploadBlock" width="350" height="250">
+<form rabbit:id="uploadForm" method="post" enctype="multipart/form-data" >
+
+  <table border="0" bgcolor="#FFFFFF" width="100%">
+    <tr>
+      <td>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <td nowrap>圖片上傳</td>
+            <td nowrap><input rabbit:id="txtStoreId" type="hidden" name="textfield" id="textfield" />              <input type="file" name="fileField" id="fileField" rabbit:id="uploadFile" /></td>
+          </tr>
+          <tr>
+            <td nowrap>&nbsp;</td>
+            <td nowrap><input type="submit" name="button4" id="button4" value="確認" />
+              <input type="button" name="button6" id="button7" value="取消" rabbit:id="btnCloseForm" /></td>
+          </tr>
+        </table>
+     </td>
+    </tr>
+  </table>
+</form></div> 
+<table width="100%" border="1" cellspacing="0" cellpadding="5" rabbit:id="cmpP">
+  <tr  BGCOLOR="olive">
+    <td colspan="3" align="center" bgcolor="#CCCCCC" ><span class="title_color" rabbit:id="lblStoreName"></span> - 產品圖片管理</td>
+  </tr>
+  <tr >
+    <td colspan="3" align="center" ><input type="button" name="button" id="button" value="新增圖片" rabbit:id="btnPopForm" />   </td>
+  </tr>
+  <tr>
+    <td valign="top" class="listRow" align="center">
+    <div class="pic_no_top">   
+   <ul>  
+  <li rabbit:id="listPic"><table border="0"><tr><td><a class="example-image-link" href="#" target="_blank"  rabbit:id="linkImg"  data-lightbox="example-set" ><img src="..." border="0"   rabbit:id="imgPic"  class="example-image" /></a></td></tr><tr><td align="center"><input type="button" rabbit:id="btnDel" value="刪除" /></td></tr></table></li> 
+   </ul> 
+ </div>    </td>
+    </tr>
+ 
+</table>
+
+
+	<div rabbit:id="divUpload" width="800" height="500" title="上傳圖片">
+    
+    <div class="container">
+    <span class="btn btn-success fileinput-button">
+        <i class="icon-plus icon-white"></i>
+        <span>選取批次上傳的圖片</span>
+        <input id="fileupload" type="file" name="files[]" multiple="multiple" />
+    </span>
+    <br />
+    <br />
+
+    <div id="progress" class="progress progress-success progress-striped">
+        <div class="bar"></div>
+    </div>
+
+    <div id="files"></div>    
+</div>
+<script type="text/javascript">
+$(function () {
+    var url = './../upload?type=item&newsId='+$("#txtStoreId").val();
+    $('#fileupload').fileupload({
+        autoUpload: true,
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {//
+               // $('<p/>').text(file.name).appendTo('#files');
+                $('<img width="150" height="150" />').attr("src","./w.Pic?id="+file.name).appendTo('#files');
+            });
+            repaintPiclist($("#txtStoreId").val());
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    });
+});
+</script>
+		</div>
+
+
+</div>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<br />
+<br/>
+<div  rabbit:class="com.kuroshio.web.module.youtube.page.client.YoutubePlayer" style="text-align:center;">
+<iframe rabbit:id="cmpPlayer" width="710" height="510" src="//www.youtube.com/embed/MTdwC9mIAI8" frameborder="0" allowfullscreen></iframe>
+</div>
+<br />
+<br/>
+</body>
+</html>

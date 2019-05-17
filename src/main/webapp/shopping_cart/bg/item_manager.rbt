@@ -221,6 +221,7 @@ color: #093;
 		<ul>
             <li><a href="category_manager.rbt" title="產品分類管理">產品分類管理</a></li>
              <li><a href="item_manager.rbt" title="產品管理">產品管理</a></li>
+              <li><a href="manufacturer_manager.rbt" title="廠商管理">產品管理</a></li>
 		</ul>
 
     </div>
